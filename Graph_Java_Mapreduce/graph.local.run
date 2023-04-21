@@ -1,0 +1,19 @@
+#!/bin/bash
+#SBATCH -A uot182
+#SBATCH --job-name="graph.local"
+#SBATCH --output="graph.local.out"
+#SBATCH --partition=compute
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=4
+#SBATCH --mem=16G
+#SBATCH --export=ALL 
+#SBATCH --time=10
+
+module load openjdk
+SW=/expanse/lustre/projects/uot182/fegaras
+export HADOOP_HOME=$SW/hadoop-3.2.2
+PATH="$HADOOP_HOME/bin:$PATH"
+export TMPDIR=$HOME/tmp
+
+rm -rf temp output
+hadoop --config $HOME jar graph.jar Graph small-graph.txt temp output

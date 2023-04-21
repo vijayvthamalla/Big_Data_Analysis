@@ -1,0 +1,20 @@
+#!/bin/bash
+#SBATCH -A uot182
+#SBATCH --job-name="add.local"
+#SBATCH --output="add.local.out"
+#SBATCH --partition=shared
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=2
+#SBATCH --export=ALL 
+#SBATCH --time=10
+
+module load openjdk
+SW=/expanse/lustre/projects/uot182/fegaras
+export SCALA_HOME=$SW/scala-2.12.3
+export SPARK_HOME=$SW/spark-3.1.2-bin-hadoop3.2
+PATH="$SPARK_HOME/bin:$SCALA_HOME/bin:$PATH"
+export TMPDIR=$HOME/tmp
+
+rm -rf output
+
+spark-submit --class Add --master local[2] add.jar M-matrix-small.txt N-matrix-small.txt output

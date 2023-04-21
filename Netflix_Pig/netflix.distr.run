@@ -1,0 +1,39 @@
+#!/bin/bash
+#SBATCH -A uot182
+#SBATCH --job-name="netflix"
+#SBATCH --output="netflix.distr.out"
+#SBATCH --partition=compute
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=120
+#SBATCH --mem=249325M
+#SBATCH --export=ALL 
+#SBATCH --time=29
+
+export HADOOP_CONF_DIR=/home/$USER/expansecluster
+module load openjdk
+SW=/expanse/lustre/projects/uot182/fegaras
+export HADOOP_HOME=$SW/hadoop-3.2.2
+export MYHADOOP_HOME=$SW/myhadoop
+export PIG_HOME=$SW/pig-0.17.0
+export PIG_CLASSPATH=$HADOOP_CONF_DIR
+export HADOOP_MAPRED_LOG_DIR=$HOME
+
+PATH="$PIG_HOME/bin:$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$MYHADOOP_HOME/bin:$PATH"
+
+myhadoop-configure.sh -s /scratch/$USER/job_$SLURM_JOBID
+
+start-dfs.sh
+start-yarn.sh
+mr-jobhistory-daemon.sh start historyserver
+
+hdfs dfs -mkdir -p /user/$USER
+hdfs dfs -put $SW/netflix/combined_data_1.txt /user/$USER/large-netflix.csv
+pig -x mapreduce -param G=/user/$USER/large-netflix.csv -param O=/user/$USER/output netflix.pig
+rm -rf output-distr
+mkdir output-distr
+hdfs dfs -get /user/$USER/output/part* output-distr
+
+mr-jobhistory-daemon.sh stop historyserver
+stop-yarn.sh
+stop-dfs.sh
+myhadoop-cleanup.sh

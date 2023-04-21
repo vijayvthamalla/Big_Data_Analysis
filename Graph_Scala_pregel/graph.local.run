@@ -1,0 +1,18 @@
+#!/bin/bash
+#SBATCH -A uot182
+#SBATCH --job-name="graph.local"
+#SBATCH --output="graph.local.out"
+#SBATCH --partition=shared
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=2
+#SBATCH --export=ALL 
+#SBATCH --time=10
+
+module load openjdk
+SW=/expanse/lustre/projects/uot182/fegaras
+export SCALA_HOME=$SW/scala-2.12.3
+export SPARK_HOME=$SW/spark-3.1.2-bin-hadoop3.2
+PATH="$SPARK_HOME/bin:$SCALA_HOME/bin:$PATH"
+export TMPDIR=$HOME/tmp
+
+spark-submit --class ConnectedComponents --master local[2] graph.jar small-graph.txt

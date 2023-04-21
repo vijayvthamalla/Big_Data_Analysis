@@ -1,0 +1,14 @@
+#!/bin/bash
+
+rm -rf graph.jar classes
+
+module load openjdk
+SW=/expanse/lustre/projects/uot182/fegaras
+export HADOOP_HOME=$SW/hadoop-3.2.2
+PATH="$HADOOP_HOME/bin:$PATH"
+
+mkdir -p classes
+javac -d classes -cp classes:`$HADOOP_HOME/bin/hadoop classpath` src/main/java/Graph.java
+jar cf graph.jar -C classes .
+
+echo "Compilation completed."

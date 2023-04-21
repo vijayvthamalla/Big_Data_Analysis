@@ -1,0 +1,35 @@
+#!/bin/bash
+#SBATCH -A uot182
+#SBATCH --job-name="graph"
+#SBATCH --output="graph.distr.out"
+#SBATCH --partition=compute
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=120
+#SBATCH --mem=249325M
+#SBATCH --export=ALL 
+#SBATCH --time=29
+
+export HADOOP_CONF_DIR=/home/$USER/expansecluster
+module load openjdk
+SW=/expanse/lustre/projects/uot182/fegaras
+export SCALA_HOME=$SW/scala-2.12.3
+export HADOOP_HOME=$SW/hadoop-3.2.2
+export MYHADOOP_HOME=$SW/myhadoop
+export SPARK_HOME=$SW/spark-3.1.2-bin-hadoop3.2
+
+PATH="$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$SPARK_HOME/bin:$MYHADOOP_HOME/bin:$SCALA_HOME/bin:$PATH"
+
+myhadoop-configure.sh -s /scratch/$USER/job_$SLURM_JOB_ID
+source $HADOOP_CONF_DIR/spark/spark-env.sh
+
+# start HDFS
+start-dfs.sh
+# start Spark
+$SPARK_HOME/sbin/start-all.sh -h $SPARK_MASTER_HOST
+
+hdfs dfs -mkdir -p /user/$USER
+hdfs dfs -put large-graph.txt /user/$USER/large-graph.txt
+spark-submit --class ConnectedComponents --num-executors 4 --executor-cores 12 --executor-memory 24G graph.jar /user/$USER/large-graph.txt
+
+stop-dfs.sh
+myhadoop-cleanup.sh

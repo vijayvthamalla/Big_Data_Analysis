@@ -1,0 +1,33 @@
+#!/bin/bash
+#SBATCH -A uot182
+#SBATCH --job-name="graph"
+#SBATCH --output="graph.distr.out"
+#SBATCH --partition=compute
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=120
+#SBATCH --mem=249325M
+#SBATCH --export=ALL 
+#SBATCH --time=29
+
+export HADOOP_CONF_DIR=/home/$USER/expansecluster
+module load openjdk
+SW=/expanse/lustre/projects/uot182/fegaras
+export HADOOP_HOME=$SW/hadoop-3.2.2
+export MYHADOOP_HOME=$SW/myhadoop
+PATH="$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$MYHADOOP_HOME/bin:$PATH"
+
+myhadoop-configure.sh -s /scratch/$USER/job_$SLURM_JOBID
+
+start-dfs.sh
+start-yarn.sh
+
+hdfs dfs -mkdir -p /user/$USER
+hdfs dfs -put large-graph.txt /user/$USER/large-graph.txt
+hadoop jar graph.jar Graph /user/$USER/large-graph.txt /user/$USER/temp /user/$USER/output
+rm -rf output-distr
+mkdir output-distr
+hdfs dfs -get /user/$USER/output/part* output-distr
+
+stop-yarn.sh
+stop-dfs.sh
+myhadoop-cleanup.sh

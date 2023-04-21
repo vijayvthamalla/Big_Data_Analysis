@@ -1,0 +1,1176 @@
+myHadoop: Using HADOOP_HOME=/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2
+myHadoop: Using MH_SCRATCH_DIR=/scratch/vthamalla/job_17732616
+myHadoop: Using JAVA_HOME=/cm/shared/apps/spack/cpu/opt/spack/linux-centos8-zen2/gcc-10.2.0/openjdk-11.0.2-ysua3xn34v6hnko3reiffhlg2r2q7fol
+myHadoop: Generating Hadoop configuration in directory in /home/vthamalla/expansecluster...
+myHadoop: Backing up old config dir to /home/vthamalla/expansecluster.0...
+renamed '/home/vthamalla/expansecluster' -> '/home/vthamalla/expansecluster.0'
+myHadoop: Designating exp-5-10 as master node (namenode, secondary namenode, and jobtracker)
+myHadoop: The following nodes will be slaves (datanode, tasktracer):
+exp-5-10
+WARNING: /scratch/vthamalla/job_17732616/pids does not exist. Creating.
+WARNING: /scratch/vthamalla/job_17732616/logs does not exist. Creating.
+2022-11-22 12:47:47,631 INFO namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = exp-5-10/198.202.103.5
+STARTUP_MSG:   args = [-format, -nonInteractive, -force]
+STARTUP_MSG:   version = 3.2.2
+STARTUP_MSG:   classpath = /home/vthamalla/expansecluster:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-databind-2.9.10.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsp-api-2.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-identity-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/snappy-java-1.0.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/failureaccess-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/error_prone_annotations-2.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jaxb-api-2.2.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-beanutils-1.9.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-client-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jul-to-slf4j-1.7.25.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-logging-1.1.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/hadoop-annotations-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-common-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-simplekdc-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/woodstox-core-5.0.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/metrics-core-3.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/stax2-api-3.1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-security-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/avro-1.7.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/accessors-smart-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-servlet-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-server-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-crypto-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jcip-annotations-1.0-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-io-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-cli-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/re2j-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/j2objc-annotations-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsr305-3.0.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/nimbus-jose-jwt-7.9.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-lang3-3.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/gson-2.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/token-provider-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-server-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-xdr-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jettison-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-asn1-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/hadoop-auth-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/curator-recipes-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-pkix-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-core-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-compress-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-text-1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/httpcore-4.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-server-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/json-smart-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-webapp-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/dnsjava-2.1.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-servlet-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/asm-5.0.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/log4j-1.2.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-xml-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-annotations-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/htrace-core4-4.1.0-incubating.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-admin-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/audience-annotations-0.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-net-3.6.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/javax.servlet-api-3.1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/guava-27.0-jre.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/javax.activation-api-1.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-core-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-math3-3.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-collections-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-util-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-core-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/zookeeper-3.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/curator-client-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/checker-qual-2.5.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-io-2.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-http-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsch-0.1.55.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-codec-1.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/httpclient-4.5.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-configuration2-2.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-config-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/animal-sniffer-annotations-1.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/curator-framework-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/netty-3.10.6.Final.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/paranamer-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsr311-api-1.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/slf4j-api-1.7.25.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-json-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-kms-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-common-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-nfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-identity-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-io-2.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-pkix-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/okio-1.6.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-asn1-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-xdr-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-core-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/gson-2.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/httpclient-4.5.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-configuration2-2.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/re2j-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-text-1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/curator-framework-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-server-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-webapp-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/woodstox-core-5.0.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-servlet-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/accessors-smart-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jcip-annotations-1.0-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/asm-5.0.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/paranamer-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/httpcore-4.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/j2objc-annotations-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/error_prone_annotations-2.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-codec-1.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/okhttp-2.7.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-config-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/json-simple-1.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/guava-27.0-jre.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/checker-qual-2.5.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/nimbus-jose-jwt-7.9.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jaxb-api-2.2.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/netty-all-4.1.48.Final.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-util-ajax-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/curator-client-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/curator-recipes-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jaxb-impl-2.2.3-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/javax.servlet-api-3.1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-security-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/netty-3.10.6.Final.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-collections-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/avro-1.7.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/stax2-api-3.1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-http-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jsr311-api-1.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-json-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-xc-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-lang3-3.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-math3-3.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-simplekdc-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/animal-sniffer-annotations-1.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/dnsjava-2.1.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-core-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jsch-0.1.55.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/hadoop-auth-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-jaxrs-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-compress-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/json-smart-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/failureaccess-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/snappy-java-1.0.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/htrace-core4-4.1.0-incubating.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-server-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-servlet-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-client-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/hadoop-annotations-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-core-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-net-3.6.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-io-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/zookeeper-3.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-util-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-databind-2.9.10.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/javax.activation-api-1.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jettison-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-admin-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/audience-annotations-0.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-common-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-xml-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-annotations-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/token-provider-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jsr305-3.0.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-beanutils-1.9.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-crypto-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-server-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-httpfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-native-client-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-client-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-native-client-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-rbf-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-nfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-client-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-rbf-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/lib/junit-4.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-uploader-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-nativetask-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-app-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/java-util-1.9.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jackson-jaxrs-base-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/mssql-jdbc-6.2.1.jre7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/json-io-2.5.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/bcprov-jdk15on-1.60.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/ehcache-3.3.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/fst-2.50.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/guice-4.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/bcpkix-jdk15on-1.60.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/objenesis-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jackson-module-jaxb-annotations-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/aopalliance-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jersey-client-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/snakeyaml-1.16.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jackson-jaxrs-json-provider-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/javax.inject-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jersey-guice-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/geronimo-jcache_1.0_spec-1.0-alpha-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/swagger-annotations-1.5.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/guice-servlet-4.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/metrics-core-3.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/HikariCP-java7-2.4.12.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-web-proxy-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-services-core-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-router-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-api-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-registry-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-timeline-pluginstorage-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-tests-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-services-api-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-nodemanager-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-client-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-submarine-3.2.2.jar
+STARTUP_MSG:   build = Unknown -r 7a3bc90b05f257c8ace2f76d74264906f0f7a932; compiled by 'hexiaoqiao' on 2021-01-03T09:26Z
+STARTUP_MSG:   java = 11.0.2
+************************************************************/
+2022-11-22 12:47:47,638 INFO namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2022-11-22 12:47:47,692 INFO namenode.NameNode: createNameNode [-format, -nonInteractive, -force]
+2022-11-22 12:47:47,989 INFO common.Util: Assuming 'file' scheme for path /scratch/vthamalla/job_17732616/namenode_data in configuration.
+2022-11-22 12:47:47,989 INFO common.Util: Assuming 'file' scheme for path /scratch/vthamalla/job_17732616/namenode_data in configuration.
+Formatting using clusterid: CID-1f7760bc-22d5-4030-8c67-be4ae6546313
+2022-11-22 12:47:48,010 INFO namenode.FSEditLog: Edit logging is async:true
+2022-11-22 12:47:48,028 INFO namenode.FSNamesystem: KeyProvider: null
+2022-11-22 12:47:48,029 INFO namenode.FSNamesystem: fsLock is fair: true
+2022-11-22 12:47:48,029 INFO namenode.FSNamesystem: Detailed lock hold time metrics enabled: false
+2022-11-22 12:47:48,057 INFO namenode.FSNamesystem: fsOwner             = vthamalla (auth:SIMPLE)
+2022-11-22 12:47:48,057 INFO namenode.FSNamesystem: supergroup          = supergroup
+2022-11-22 12:47:48,057 INFO namenode.FSNamesystem: isPermissionEnabled = true
+2022-11-22 12:47:48,057 INFO namenode.FSNamesystem: HA Enabled: false
+2022-11-22 12:47:48,184 INFO common.Util: dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2022-11-22 12:47:48,191 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.limit: configured=1000, counted=60, effected=1000
+2022-11-22 12:47:48,191 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+2022-11-22 12:47:48,193 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2022-11-22 12:47:48,194 INFO blockmanagement.BlockManager: The block deletion will start around 2022 Nov 22 12:47:48
+2022-11-22 12:47:48,194 INFO util.GSet: Computing capacity for map BlocksMap
+2022-11-22 12:47:48,194 INFO util.GSet: VM type       = 64-bit
+2022-11-22 12:47:48,195 INFO util.GSet: 2.0% max memory 30.0 GB = 613.8 MB
+2022-11-22 12:47:48,195 INFO util.GSet: capacity      = 2^26 = 67108864 entries
+2022-11-22 12:47:48,227 INFO blockmanagement.BlockManager: Storage policy satisfier is disabled
+2022-11-22 12:47:48,227 INFO blockmanagement.BlockManager: dfs.block.access.token.enable = false
+2022-11-22 12:47:48,231 INFO Configuration.deprecation: No unit for dfs.namenode.safemode.extension(30000) assuming MILLISECONDS
+2022-11-22 12:47:48,231 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2022-11-22 12:47:48,231 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.min.datanodes = 0
+2022-11-22 12:47:48,231 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.extension = 30000
+2022-11-22 12:47:48,232 INFO blockmanagement.BlockManager: defaultReplication         = 3
+2022-11-22 12:47:48,232 INFO blockmanagement.BlockManager: maxReplication             = 512
+2022-11-22 12:47:48,232 INFO blockmanagement.BlockManager: minReplication             = 1
+2022-11-22 12:47:48,232 INFO blockmanagement.BlockManager: maxReplicationStreams      = 2
+2022-11-22 12:47:48,232 INFO blockmanagement.BlockManager: redundancyRecheckInterval  = 3000ms
+2022-11-22 12:47:48,232 INFO blockmanagement.BlockManager: encryptDataTransfer        = false
+2022-11-22 12:47:48,232 INFO blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+2022-11-22 12:47:48,245 INFO namenode.FSDirectory: GLOBAL serial map: bits=29 maxEntries=536870911
+2022-11-22 12:47:48,245 INFO namenode.FSDirectory: USER serial map: bits=24 maxEntries=16777215
+2022-11-22 12:47:48,245 INFO namenode.FSDirectory: GROUP serial map: bits=24 maxEntries=16777215
+2022-11-22 12:47:48,245 INFO namenode.FSDirectory: XATTR serial map: bits=24 maxEntries=16777215
+2022-11-22 12:47:48,252 INFO util.GSet: Computing capacity for map INodeMap
+2022-11-22 12:47:48,252 INFO util.GSet: VM type       = 64-bit
+2022-11-22 12:47:48,252 INFO util.GSet: 1.0% max memory 30.0 GB = 306.9 MB
+2022-11-22 12:47:48,252 INFO util.GSet: capacity      = 2^25 = 33554432 entries
+2022-11-22 12:47:48,266 INFO namenode.FSDirectory: ACLs enabled? false
+2022-11-22 12:47:48,266 INFO namenode.FSDirectory: POSIX ACL inheritance enabled? true
+2022-11-22 12:47:48,266 INFO namenode.FSDirectory: XAttrs enabled? true
+2022-11-22 12:47:48,266 INFO namenode.NameNode: Caching file names occurring more than 10 times
+2022-11-22 12:47:48,270 INFO snapshot.SnapshotManager: Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
+2022-11-22 12:47:48,271 INFO snapshot.SnapshotManager: SkipList is disabled
+2022-11-22 12:47:48,274 INFO util.GSet: Computing capacity for map cachedBlocks
+2022-11-22 12:47:48,274 INFO util.GSet: VM type       = 64-bit
+2022-11-22 12:47:48,275 INFO util.GSet: 0.25% max memory 30.0 GB = 76.7 MB
+2022-11-22 12:47:48,275 INFO util.GSet: capacity      = 2^23 = 8388608 entries
+2022-11-22 12:47:48,284 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2022-11-22 12:47:48,284 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.num.users = 10
+2022-11-22 12:47:48,284 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2022-11-22 12:47:48,287 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
+2022-11-22 12:47:48,287 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2022-11-22 12:47:48,288 INFO util.GSet: Computing capacity for map NameNodeRetryCache
+2022-11-22 12:47:48,288 INFO util.GSet: VM type       = 64-bit
+2022-11-22 12:47:48,288 INFO util.GSet: 0.029999999329447746% max memory 30.0 GB = 9.2 MB
+2022-11-22 12:47:48,288 INFO util.GSet: capacity      = 2^20 = 1048576 entries
+2022-11-22 12:47:48,304 INFO namenode.FSImage: Allocated new BlockPoolId: BP-906323820-198.202.103.5-1669150068300
+2022-11-22 12:47:48,315 INFO common.Storage: Storage directory /scratch/vthamalla/job_17732616/namenode_data has been successfully formatted.
+2022-11-22 12:47:48,339 INFO namenode.FSImageFormatProtobuf: Saving image file /scratch/vthamalla/job_17732616/namenode_data/current/fsimage.ckpt_0000000000000000000 using no compression
+2022-11-22 12:47:48,419 INFO namenode.FSImageFormatProtobuf: Image file /scratch/vthamalla/job_17732616/namenode_data/current/fsimage.ckpt_0000000000000000000 of size 401 bytes saved in 0 seconds .
+2022-11-22 12:47:48,432 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+2022-11-22 12:47:48,436 INFO namenode.FSImage: FSImageSaver clean checkpoint: txid=0 when meet shutdown.
+2022-11-22 12:47:48,436 INFO namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at exp-5-10/198.202.103.5
+************************************************************/
+myHadoop:  
+myHadoop: Enabling experimental Spark support
+myHadoop: Using SPARK_CONF_DIR=/home/vthamalla/expansecluster/spark
+myHadoop:  
+To use Spark, you will want to type the following commands:"
+  source /home/vthamalla/expansecluster/spark/spark-env.sh
+  myspark start
+Starting namenodes on [exp-5-10]
+Starting datanodes
+WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+localhost: Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+localhost: It is also possible that a host key has just been changed.
+localhost: The fingerprint for the ED25519 key sent by the remote host is
+localhost: SHA256:Rc8q+zOLGZ652cpaq1MRqa2wsD73UYNXyiYnFKGyl/M.
+localhost: Please contact your system administrator.
+localhost: Add correct host key in /home/vthamalla/.ssh/known_hosts to get rid of this message.
+localhost: Offending ED25519 key in /home/vthamalla/.ssh/known_hosts:1
+localhost: Password authentication is disabled to avoid man-in-the-middle attacks.
+localhost: Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+localhost: WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+Starting secondary namenodes [exp-5-10]
+starting org.apache.spark.deploy.master.Master, logging to /scratch/vthamalla/job_17732616/logs/spark-vthamalla-org.apache.spark.deploy.master.Master-1-exp-5-10.out
+exp-5-10: starting org.apache.spark.deploy.worker.Worker, logging to /expanse/lustre/projects/uot182/fegaras/spark-3.1.2-bin-hadoop3.2/logs/spark-vthamalla-org.apache.spark.deploy.worker.Worker-1-exp-5-10.out
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/expanse/lustre/projects/uot182/fegaras/spark-3.1.2-bin-hadoop3.2/jars/spark-unsafe_2.12-3.1.2.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2022-11-22 12:48:12,536 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-11-22 12:48:12,687 INFO spark.SparkContext: Running Spark version 3.1.2
+2022-11-22 12:48:12,717 INFO resource.ResourceUtils: ==============================================================
+2022-11-22 12:48:12,717 INFO resource.ResourceUtils: No custom resources configured for spark.driver.
+2022-11-22 12:48:12,717 INFO resource.ResourceUtils: ==============================================================
+2022-11-22 12:48:12,718 INFO spark.SparkContext: Submitted application: Netflix
+2022-11-22 12:48:12,732 INFO resource.ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 12, script: , vendor: , memory -> name: memory, amount: 24576, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+2022-11-22 12:48:12,748 INFO resource.ResourceProfile: Limiting resource is cpus at 12 tasks per executor
+2022-11-22 12:48:12,749 INFO resource.ResourceProfileManager: Added ResourceProfile id: 0
+2022-11-22 12:48:12,780 INFO spark.SecurityManager: Changing view acls to: vthamalla
+2022-11-22 12:48:12,781 INFO spark.SecurityManager: Changing modify acls to: vthamalla
+2022-11-22 12:48:12,781 INFO spark.SecurityManager: Changing view acls groups to: 
+2022-11-22 12:48:12,781 INFO spark.SecurityManager: Changing modify acls groups to: 
+2022-11-22 12:48:12,781 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(vthamalla); groups with view permissions: Set(); users  with modify permissions: Set(vthamalla); groups with modify permissions: Set()
+2022-11-22 12:48:12,946 INFO util.Utils: Successfully started service 'sparkDriver' on port 37407.
+2022-11-22 12:48:12,972 INFO spark.SparkEnv: Registering MapOutputTracker
+2022-11-22 12:48:12,992 INFO spark.SparkEnv: Registering BlockManagerMaster
+2022-11-22 12:48:13,006 INFO storage.BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2022-11-22 12:48:13,006 INFO storage.BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+2022-11-22 12:48:13,009 INFO spark.SparkEnv: Registering BlockManagerMasterHeartbeat
+2022-11-22 12:48:13,020 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-f3ac874f-6074-45eb-8774-3f18809dcdd0
+2022-11-22 12:48:13,045 INFO memory.MemoryStore: MemoryStore started with capacity 434.4 MiB
+2022-11-22 12:48:13,058 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+2022-11-22 12:48:13,128 INFO util.log: Logging initialized @1688ms to org.sparkproject.jetty.util.log.Slf4jLog
+2022-11-22 12:48:13,176 INFO server.Server: jetty-9.4.40.v20210413; built: 2021-04-13T20:42:42.668Z; git: b881a572662e1943a14ae12e7e1207989f218b74; jvm 11.0.2+9
+2022-11-22 12:48:13,189 INFO server.Server: Started @1749ms
+2022-11-22 12:48:13,217 INFO server.AbstractConnector: Started ServerConnector@308f9f31{HTTP/1.1, (http/1.1)}{exp-5-10:4040}
+2022-11-22 12:48:13,217 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+2022-11-22 12:48:13,235 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1daf3b44{/jobs,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,236 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@44550792{/jobs/json,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,237 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@474c9131{/jobs/job,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,239 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4743a322{/jobs/job/json,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,240 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@381d7219{/stages,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,241 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@13fed1ec{/stages/json,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,241 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@329a1f8d{/stages/stage,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,243 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@ebd06a9{/stages/stage/json,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,244 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4cdb8504{/stages/pool,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,244 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@10358c32{/stages/pool/json,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,245 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3a175162{/storage,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,245 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2a2843ec{/storage/json,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,246 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@20de05e5{/storage/rdd,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,247 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5e1fc2aa{/storage/rdd/json,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,247 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@382c90c2{/environment,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,248 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@28737371{/environment/json,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,249 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@760245e1{/executors,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,249 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@295bf2a{/executors/json,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,250 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6ff6efdc{/executors/threadDump,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,252 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4eb1c69{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,259 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2b037cfc{/static,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,260 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6b69761b{/,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,261 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@26221bad{/api,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,261 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3e47a03{/jobs/job/kill,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,262 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@8deb645{/stages/stage/kill,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,263 INFO ui.SparkUI: Bound SparkUI to exp-5-10, and started at http://exp-5-10.expanse.sdsc.edu:4040
+2022-11-22 12:48:13,279 INFO spark.SparkContext: Added JAR file:/home/vthamalla/project7/netflix.jar at spark://exp-5-10.expanse.sdsc.edu:37407/jars/netflix.jar with timestamp 1669150092681
+2022-11-22 12:48:13,438 INFO client.StandaloneAppClient$ClientEndpoint: Connecting to master spark://exp-5-10:7077...
+2022-11-22 12:48:13,474 INFO client.TransportClientFactory: Successfully created connection to exp-5-10/198.202.103.5:7077 after 21 ms (0 ms spent in bootstraps)
+2022-11-22 12:48:13,588 INFO cluster.StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20221122124813-0000
+2022-11-22 12:48:13,593 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 43847.
+2022-11-22 12:48:13,594 INFO netty.NettyBlockTransferService: Server created on exp-5-10.expanse.sdsc.edu:43847
+2022-11-22 12:48:13,595 INFO storage.BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2022-11-22 12:48:13,600 INFO storage.BlockManagerMaster: Registering BlockManager BlockManagerId(driver, exp-5-10.expanse.sdsc.edu, 43847, None)
+2022-11-22 12:48:13,602 INFO storage.BlockManagerMasterEndpoint: Registering block manager exp-5-10.expanse.sdsc.edu:43847 with 434.4 MiB RAM, BlockManagerId(driver, exp-5-10.expanse.sdsc.edu, 43847, None)
+2022-11-22 12:48:13,603 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221122124813-0000/0 on worker-20221122124808-198.202.103.5-42017 (198.202.103.5:42017) with 12 core(s)
+2022-11-22 12:48:13,605 INFO storage.BlockManagerMaster: Registered BlockManager BlockManagerId(driver, exp-5-10.expanse.sdsc.edu, 43847, None)
+2022-11-22 12:48:13,605 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221122124813-0000/0 on hostPort 198.202.103.5:42017 with 12 core(s), 24.0 GiB RAM
+2022-11-22 12:48:13,606 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221122124813-0000/1 on worker-20221122124808-198.202.103.5-42017 (198.202.103.5:42017) with 12 core(s)
+2022-11-22 12:48:13,606 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221122124813-0000/1 on hostPort 198.202.103.5:42017 with 12 core(s), 24.0 GiB RAM
+2022-11-22 12:48:13,606 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221122124813-0000/2 on worker-20221122124808-198.202.103.5-42017 (198.202.103.5:42017) with 12 core(s)
+2022-11-22 12:48:13,606 INFO storage.BlockManager: Initialized BlockManager: BlockManagerId(driver, exp-5-10.expanse.sdsc.edu, 43847, None)
+2022-11-22 12:48:13,607 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221122124813-0000/2 on hostPort 198.202.103.5:42017 with 12 core(s), 24.0 GiB RAM
+2022-11-22 12:48:13,607 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221122124813-0000/3 on worker-20221122124808-198.202.103.5-42017 (198.202.103.5:42017) with 12 core(s)
+2022-11-22 12:48:13,607 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221122124813-0000/3 on hostPort 198.202.103.5:42017 with 12 core(s), 24.0 GiB RAM
+2022-11-22 12:48:13,607 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221122124813-0000/4 on worker-20221122124808-198.202.103.5-42017 (198.202.103.5:42017) with 12 core(s)
+2022-11-22 12:48:13,608 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221122124813-0000/4 on hostPort 198.202.103.5:42017 with 12 core(s), 24.0 GiB RAM
+2022-11-22 12:48:13,608 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221122124813-0000/5 on worker-20221122124808-198.202.103.5-42017 (198.202.103.5:42017) with 12 core(s)
+2022-11-22 12:48:13,608 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221122124813-0000/5 on hostPort 198.202.103.5:42017 with 12 core(s), 24.0 GiB RAM
+2022-11-22 12:48:13,608 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221122124813-0000/6 on worker-20221122124808-198.202.103.5-42017 (198.202.103.5:42017) with 12 core(s)
+2022-11-22 12:48:13,609 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221122124813-0000/6 on hostPort 198.202.103.5:42017 with 12 core(s), 24.0 GiB RAM
+2022-11-22 12:48:13,609 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221122124813-0000/7 on worker-20221122124808-198.202.103.5-42017 (198.202.103.5:42017) with 12 core(s)
+2022-11-22 12:48:13,609 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221122124813-0000/7 on hostPort 198.202.103.5:42017 with 12 core(s), 24.0 GiB RAM
+2022-11-22 12:48:13,609 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221122124813-0000/8 on worker-20221122124808-198.202.103.5-42017 (198.202.103.5:42017) with 12 core(s)
+2022-11-22 12:48:13,609 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221122124813-0000/8 on hostPort 198.202.103.5:42017 with 12 core(s), 24.0 GiB RAM
+2022-11-22 12:48:13,610 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221122124813-0000/9 on worker-20221122124808-198.202.103.5-42017 (198.202.103.5:42017) with 12 core(s)
+2022-11-22 12:48:13,610 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221122124813-0000/9 on hostPort 198.202.103.5:42017 with 12 core(s), 24.0 GiB RAM
+2022-11-22 12:48:13,727 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@64f981e2{/metrics/json,null,AVAILABLE,@Spark}
+2022-11-22 12:48:13,753 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221122124813-0000/8 is now RUNNING
+2022-11-22 12:48:13,756 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221122124813-0000/6 is now RUNNING
+2022-11-22 12:48:13,759 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221122124813-0000/9 is now RUNNING
+2022-11-22 12:48:13,761 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221122124813-0000/2 is now RUNNING
+2022-11-22 12:48:13,761 INFO cluster.StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+2022-11-22 12:48:13,763 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221122124813-0000/0 is now RUNNING
+2022-11-22 12:48:13,764 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221122124813-0000/1 is now RUNNING
+2022-11-22 12:48:13,765 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221122124813-0000/7 is now RUNNING
+2022-11-22 12:48:13,766 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221122124813-0000/5 is now RUNNING
+2022-11-22 12:48:13,767 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221122124813-0000/3 is now RUNNING
+2022-11-22 12:48:13,768 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221122124813-0000/4 is now RUNNING
+2022-11-22 12:48:14,180 INFO memory.MemoryStore: Block broadcast_0 stored as values in memory (estimated size 177.3 KiB, free 434.2 MiB)
+2022-11-22 12:48:14,240 INFO memory.MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 27.6 KiB, free 434.2 MiB)
+2022-11-22 12:48:14,242 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on exp-5-10.expanse.sdsc.edu:43847 (size: 27.6 KiB, free: 434.4 MiB)
+2022-11-22 12:48:14,244 INFO spark.SparkContext: Created broadcast 0 from textFile at Netflix.scala:15
+2022-11-22 12:48:15,252 INFO internal.SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/home/vthamalla/project7/spark-warehouse').
+2022-11-22 12:48:15,252 INFO internal.SharedState: Warehouse path is 'file:/home/vthamalla/project7/spark-warehouse'.
+2022-11-22 12:48:15,267 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4ec8d9b2{/SQL,null,AVAILABLE,@Spark}
+2022-11-22 12:48:15,268 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@c0013b8{/SQL/json,null,AVAILABLE,@Spark}
+2022-11-22 12:48:15,269 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@173a5fad{/SQL/execution,null,AVAILABLE,@Spark}
+2022-11-22 12:48:15,269 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@65d90b7f{/SQL/execution/json,null,AVAILABLE,@Spark}
+2022-11-22 12:48:15,271 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@35b3c1f6{/static/sql,null,AVAILABLE,@Spark}
+2022-11-22 12:48:15,588 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.5:49578) with ID 8,  ResourceProfileId 0
+2022-11-22 12:48:15,632 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.5:49588) with ID 6,  ResourceProfileId 0
+2022-11-22 12:48:15,642 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.5:49580) with ID 1,  ResourceProfileId 0
+2022-11-22 12:48:15,647 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.5:49584) with ID 5,  ResourceProfileId 0
+2022-11-22 12:48:15,648 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.5:49586) with ID 3,  ResourceProfileId 0
+2022-11-22 12:48:15,648 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.5:49582) with ID 0,  ResourceProfileId 0
+2022-11-22 12:48:15,649 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.5:49592) with ID 9,  ResourceProfileId 0
+2022-11-22 12:48:15,661 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.5:49590) with ID 7,  ResourceProfileId 0
+2022-11-22 12:48:15,675 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.5:49594) with ID 2,  ResourceProfileId 0
+2022-11-22 12:48:15,679 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.5:49596) with ID 4,  ResourceProfileId 0
+2022-11-22 12:48:15,714 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.5:34705 with 14.2 GiB RAM, BlockManagerId(8, 198.202.103.5, 34705, None)
+2022-11-22 12:48:15,737 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.5:38429 with 14.2 GiB RAM, BlockManagerId(6, 198.202.103.5, 38429, None)
+2022-11-22 12:48:15,744 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.5:46035 with 14.2 GiB RAM, BlockManagerId(1, 198.202.103.5, 46035, None)
+2022-11-22 12:48:15,750 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.5:36453 with 14.2 GiB RAM, BlockManagerId(0, 198.202.103.5, 36453, None)
+2022-11-22 12:48:15,762 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.5:41423 with 14.2 GiB RAM, BlockManagerId(5, 198.202.103.5, 41423, None)
+2022-11-22 12:48:15,765 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.5:34947 with 14.2 GiB RAM, BlockManagerId(9, 198.202.103.5, 34947, None)
+2022-11-22 12:48:15,767 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.5:33635 with 14.2 GiB RAM, BlockManagerId(7, 198.202.103.5, 33635, None)
+2022-11-22 12:48:15,767 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.5:44571 with 14.2 GiB RAM, BlockManagerId(3, 198.202.103.5, 44571, None)
+2022-11-22 12:48:15,781 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.5:45789 with 14.2 GiB RAM, BlockManagerId(4, 198.202.103.5, 45789, None)
+2022-11-22 12:48:15,787 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.5:33855 with 14.2 GiB RAM, BlockManagerId(2, 198.202.103.5, 33855, None)
+2022-11-22 12:48:16,974 INFO codegen.CodeGenerator: Code generated in 154.675119 ms
+2022-11-22 12:48:17,048 INFO codegen.CodeGenerator: Code generated in 46.662944 ms
+2022-11-22 12:48:17,086 INFO codegen.CodeGenerator: Code generated in 26.948005 ms
+2022-11-22 12:48:17,207 INFO spark.SparkContext: Starting job: show at Netflix.scala:30
+2022-11-22 12:48:17,530 INFO mapred.FileInputFormat: Total input files to process : 1
+2022-11-22 12:48:17,564 INFO scheduler.DAGScheduler: Registering RDD 6 (show at Netflix.scala:30) as input to shuffle 0
+2022-11-22 12:48:17,566 INFO scheduler.DAGScheduler: Registering RDD 9 (show at Netflix.scala:30) as input to shuffle 1
+2022-11-22 12:48:17,567 INFO scheduler.DAGScheduler: Got job 0 (show at Netflix.scala:30) with 1 output partitions
+2022-11-22 12:48:17,567 INFO scheduler.DAGScheduler: Final stage: ResultStage 2 (show at Netflix.scala:30)
+2022-11-22 12:48:17,568 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 1)
+2022-11-22 12:48:17,569 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 1)
+2022-11-22 12:48:17,572 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[6] at show at Netflix.scala:30), which has no missing parents
+2022-11-22 12:48:17,590 INFO memory.MemoryStore: Block broadcast_1 stored as values in memory (estimated size 29.7 KiB, free 434.2 MiB)
+2022-11-22 12:48:17,593 INFO memory.MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 13.4 KiB, free 434.2 MiB)
+2022-11-22 12:48:17,594 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on exp-5-10.expanse.sdsc.edu:43847 (size: 13.4 KiB, free: 434.4 MiB)
+2022-11-22 12:48:17,594 INFO spark.SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1388
+2022-11-22 12:48:17,607 INFO scheduler.DAGScheduler: Submitting 4 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[6] at show at Netflix.scala:30) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+2022-11-22 12:48:17,607 INFO scheduler.TaskSchedulerImpl: Adding task set 0.0 with 4 tasks resource profile 0
+2022-11-22 12:48:17,642 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (198.202.103.5, executor 2, partition 0, ANY, 4516 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:17,644 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1) (198.202.103.5, executor 1, partition 1, ANY, 4516 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:17,644 INFO scheduler.TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2) (198.202.103.5, executor 9, partition 2, ANY, 4516 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:17,645 INFO scheduler.TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3) (198.202.103.5, executor 0, partition 3, ANY, 4516 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:17,817 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on 198.202.103.5:34947 (size: 13.4 KiB, free: 14.2 GiB)
+2022-11-22 12:48:17,818 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on 198.202.103.5:46035 (size: 13.4 KiB, free: 14.2 GiB)
+2022-11-22 12:48:17,818 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on 198.202.103.5:36453 (size: 13.4 KiB, free: 14.2 GiB)
+2022-11-22 12:48:17,818 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on 198.202.103.5:33855 (size: 13.4 KiB, free: 14.2 GiB)
+2022-11-22 12:48:18,128 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 198.202.103.5:33855 (size: 27.6 KiB, free: 14.2 GiB)
+2022-11-22 12:48:18,157 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 198.202.103.5:36453 (size: 27.6 KiB, free: 14.2 GiB)
+2022-11-22 12:48:18,157 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 198.202.103.5:46035 (size: 27.6 KiB, free: 14.2 GiB)
+2022-11-22 12:48:18,158 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 198.202.103.5:34947 (size: 27.6 KiB, free: 14.2 GiB)
+2022-11-22 12:48:21,996 INFO scheduler.TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 4351 ms on 198.202.103.5 (executor 0) (1/4)
+2022-11-22 12:48:23,009 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 5379 ms on 198.202.103.5 (executor 2) (2/4)
+2022-11-22 12:48:23,175 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 5531 ms on 198.202.103.5 (executor 1) (3/4)
+2022-11-22 12:48:23,594 INFO scheduler.TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 5950 ms on 198.202.103.5 (executor 9) (4/4)
+2022-11-22 12:48:23,595 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2022-11-22 12:48:23,597 INFO scheduler.DAGScheduler: ShuffleMapStage 0 (show at Netflix.scala:30) finished in 6.012 s
+2022-11-22 12:48:23,597 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-11-22 12:48:23,597 INFO scheduler.DAGScheduler: running: Set()
+2022-11-22 12:48:23,597 INFO scheduler.DAGScheduler: waiting: Set(ShuffleMapStage 1, ResultStage 2)
+2022-11-22 12:48:23,598 INFO scheduler.DAGScheduler: failed: Set()
+2022-11-22 12:48:23,600 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 1 (MapPartitionsRDD[9] at show at Netflix.scala:30), which has no missing parents
+2022-11-22 12:48:23,627 INFO memory.MemoryStore: Block broadcast_2 stored as values in memory (estimated size 42.2 KiB, free 434.1 MiB)
+2022-11-22 12:48:23,629 INFO memory.MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 19.3 KiB, free 434.1 MiB)
+2022-11-22 12:48:23,630 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on exp-5-10.expanse.sdsc.edu:43847 (size: 19.3 KiB, free: 434.3 MiB)
+2022-11-22 12:48:23,630 INFO spark.SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1388
+2022-11-22 12:48:23,633 INFO scheduler.DAGScheduler: Submitting 200 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[9] at show at Netflix.scala:30) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+2022-11-22 12:48:23,633 INFO scheduler.TaskSchedulerImpl: Adding task set 1.0 with 200 tasks resource profile 0
+2022-11-22 12:48:23,638 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 1.0 (TID 4) (198.202.103.5, executor 4, partition 0, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,638 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 1.0 (TID 5) (198.202.103.5, executor 6, partition 1, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,638 INFO scheduler.TaskSetManager: Starting task 2.0 in stage 1.0 (TID 6) (198.202.103.5, executor 1, partition 2, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,638 INFO scheduler.TaskSetManager: Starting task 3.0 in stage 1.0 (TID 7) (198.202.103.5, executor 8, partition 3, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,638 INFO scheduler.TaskSetManager: Starting task 4.0 in stage 1.0 (TID 8) (198.202.103.5, executor 7, partition 4, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,639 INFO scheduler.TaskSetManager: Starting task 5.0 in stage 1.0 (TID 9) (198.202.103.5, executor 3, partition 5, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,639 INFO scheduler.TaskSetManager: Starting task 6.0 in stage 1.0 (TID 10) (198.202.103.5, executor 0, partition 6, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,639 INFO scheduler.TaskSetManager: Starting task 7.0 in stage 1.0 (TID 11) (198.202.103.5, executor 9, partition 7, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,639 INFO scheduler.TaskSetManager: Starting task 8.0 in stage 1.0 (TID 12) (198.202.103.5, executor 2, partition 8, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,640 INFO scheduler.TaskSetManager: Starting task 9.0 in stage 1.0 (TID 13) (198.202.103.5, executor 5, partition 9, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,640 INFO scheduler.TaskSetManager: Starting task 10.0 in stage 1.0 (TID 14) (198.202.103.5, executor 4, partition 10, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,640 INFO scheduler.TaskSetManager: Starting task 11.0 in stage 1.0 (TID 15) (198.202.103.5, executor 6, partition 11, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,640 INFO scheduler.TaskSetManager: Starting task 12.0 in stage 1.0 (TID 16) (198.202.103.5, executor 1, partition 12, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,640 INFO scheduler.TaskSetManager: Starting task 13.0 in stage 1.0 (TID 17) (198.202.103.5, executor 8, partition 13, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,641 INFO scheduler.TaskSetManager: Starting task 14.0 in stage 1.0 (TID 18) (198.202.103.5, executor 7, partition 14, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,641 INFO scheduler.TaskSetManager: Starting task 15.0 in stage 1.0 (TID 19) (198.202.103.5, executor 3, partition 15, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,641 INFO scheduler.TaskSetManager: Starting task 16.0 in stage 1.0 (TID 20) (198.202.103.5, executor 0, partition 16, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,641 INFO scheduler.TaskSetManager: Starting task 17.0 in stage 1.0 (TID 21) (198.202.103.5, executor 9, partition 17, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,642 INFO scheduler.TaskSetManager: Starting task 18.0 in stage 1.0 (TID 22) (198.202.103.5, executor 2, partition 18, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,642 INFO scheduler.TaskSetManager: Starting task 19.0 in stage 1.0 (TID 23) (198.202.103.5, executor 5, partition 19, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,642 INFO scheduler.TaskSetManager: Starting task 20.0 in stage 1.0 (TID 24) (198.202.103.5, executor 4, partition 20, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,642 INFO scheduler.TaskSetManager: Starting task 21.0 in stage 1.0 (TID 25) (198.202.103.5, executor 6, partition 21, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,642 INFO scheduler.TaskSetManager: Starting task 22.0 in stage 1.0 (TID 26) (198.202.103.5, executor 1, partition 22, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,643 INFO scheduler.TaskSetManager: Starting task 23.0 in stage 1.0 (TID 27) (198.202.103.5, executor 8, partition 23, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,643 INFO scheduler.TaskSetManager: Starting task 24.0 in stage 1.0 (TID 28) (198.202.103.5, executor 7, partition 24, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,643 INFO scheduler.TaskSetManager: Starting task 25.0 in stage 1.0 (TID 29) (198.202.103.5, executor 3, partition 25, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,643 INFO scheduler.TaskSetManager: Starting task 26.0 in stage 1.0 (TID 30) (198.202.103.5, executor 0, partition 26, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,643 INFO scheduler.TaskSetManager: Starting task 27.0 in stage 1.0 (TID 31) (198.202.103.5, executor 9, partition 27, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,644 INFO scheduler.TaskSetManager: Starting task 28.0 in stage 1.0 (TID 32) (198.202.103.5, executor 2, partition 28, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,644 INFO scheduler.TaskSetManager: Starting task 29.0 in stage 1.0 (TID 33) (198.202.103.5, executor 5, partition 29, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,644 INFO scheduler.TaskSetManager: Starting task 30.0 in stage 1.0 (TID 34) (198.202.103.5, executor 4, partition 30, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,644 INFO scheduler.TaskSetManager: Starting task 31.0 in stage 1.0 (TID 35) (198.202.103.5, executor 6, partition 31, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,644 INFO scheduler.TaskSetManager: Starting task 32.0 in stage 1.0 (TID 36) (198.202.103.5, executor 1, partition 32, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,645 INFO scheduler.TaskSetManager: Starting task 33.0 in stage 1.0 (TID 37) (198.202.103.5, executor 8, partition 33, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,645 INFO scheduler.TaskSetManager: Starting task 34.0 in stage 1.0 (TID 38) (198.202.103.5, executor 7, partition 34, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,645 INFO scheduler.TaskSetManager: Starting task 35.0 in stage 1.0 (TID 39) (198.202.103.5, executor 3, partition 35, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,645 INFO scheduler.TaskSetManager: Starting task 36.0 in stage 1.0 (TID 40) (198.202.103.5, executor 0, partition 36, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,645 INFO scheduler.TaskSetManager: Starting task 37.0 in stage 1.0 (TID 41) (198.202.103.5, executor 9, partition 37, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,645 INFO scheduler.TaskSetManager: Starting task 38.0 in stage 1.0 (TID 42) (198.202.103.5, executor 2, partition 38, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,646 INFO scheduler.TaskSetManager: Starting task 39.0 in stage 1.0 (TID 43) (198.202.103.5, executor 5, partition 39, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,646 INFO scheduler.TaskSetManager: Starting task 40.0 in stage 1.0 (TID 44) (198.202.103.5, executor 4, partition 40, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,646 INFO scheduler.TaskSetManager: Starting task 41.0 in stage 1.0 (TID 45) (198.202.103.5, executor 6, partition 41, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,646 INFO scheduler.TaskSetManager: Starting task 42.0 in stage 1.0 (TID 46) (198.202.103.5, executor 1, partition 42, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,646 INFO scheduler.TaskSetManager: Starting task 43.0 in stage 1.0 (TID 47) (198.202.103.5, executor 8, partition 43, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,647 INFO scheduler.TaskSetManager: Starting task 44.0 in stage 1.0 (TID 48) (198.202.103.5, executor 7, partition 44, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,647 INFO scheduler.TaskSetManager: Starting task 45.0 in stage 1.0 (TID 49) (198.202.103.5, executor 3, partition 45, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,647 INFO scheduler.TaskSetManager: Starting task 46.0 in stage 1.0 (TID 50) (198.202.103.5, executor 0, partition 46, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,647 INFO scheduler.TaskSetManager: Starting task 47.0 in stage 1.0 (TID 51) (198.202.103.5, executor 9, partition 47, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,647 INFO scheduler.TaskSetManager: Starting task 48.0 in stage 1.0 (TID 52) (198.202.103.5, executor 2, partition 48, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,648 INFO scheduler.TaskSetManager: Starting task 49.0 in stage 1.0 (TID 53) (198.202.103.5, executor 5, partition 49, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,648 INFO scheduler.TaskSetManager: Starting task 50.0 in stage 1.0 (TID 54) (198.202.103.5, executor 4, partition 50, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,648 INFO scheduler.TaskSetManager: Starting task 51.0 in stage 1.0 (TID 55) (198.202.103.5, executor 6, partition 51, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,648 INFO scheduler.TaskSetManager: Starting task 52.0 in stage 1.0 (TID 56) (198.202.103.5, executor 1, partition 52, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,649 INFO scheduler.TaskSetManager: Starting task 53.0 in stage 1.0 (TID 57) (198.202.103.5, executor 8, partition 53, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,649 INFO scheduler.TaskSetManager: Starting task 54.0 in stage 1.0 (TID 58) (198.202.103.5, executor 7, partition 54, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,649 INFO scheduler.TaskSetManager: Starting task 55.0 in stage 1.0 (TID 59) (198.202.103.5, executor 3, partition 55, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,649 INFO scheduler.TaskSetManager: Starting task 56.0 in stage 1.0 (TID 60) (198.202.103.5, executor 0, partition 56, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,649 INFO scheduler.TaskSetManager: Starting task 57.0 in stage 1.0 (TID 61) (198.202.103.5, executor 9, partition 57, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,650 INFO scheduler.TaskSetManager: Starting task 58.0 in stage 1.0 (TID 62) (198.202.103.5, executor 2, partition 58, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,650 INFO scheduler.TaskSetManager: Starting task 59.0 in stage 1.0 (TID 63) (198.202.103.5, executor 5, partition 59, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,650 INFO scheduler.TaskSetManager: Starting task 60.0 in stage 1.0 (TID 64) (198.202.103.5, executor 4, partition 60, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,650 INFO scheduler.TaskSetManager: Starting task 61.0 in stage 1.0 (TID 65) (198.202.103.5, executor 6, partition 61, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,650 INFO scheduler.TaskSetManager: Starting task 62.0 in stage 1.0 (TID 66) (198.202.103.5, executor 1, partition 62, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,650 INFO scheduler.TaskSetManager: Starting task 63.0 in stage 1.0 (TID 67) (198.202.103.5, executor 8, partition 63, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,651 INFO scheduler.TaskSetManager: Starting task 64.0 in stage 1.0 (TID 68) (198.202.103.5, executor 7, partition 64, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,651 INFO scheduler.TaskSetManager: Starting task 65.0 in stage 1.0 (TID 69) (198.202.103.5, executor 3, partition 65, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,651 INFO scheduler.TaskSetManager: Starting task 66.0 in stage 1.0 (TID 70) (198.202.103.5, executor 0, partition 66, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,651 INFO scheduler.TaskSetManager: Starting task 67.0 in stage 1.0 (TID 71) (198.202.103.5, executor 9, partition 67, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,651 INFO scheduler.TaskSetManager: Starting task 68.0 in stage 1.0 (TID 72) (198.202.103.5, executor 2, partition 68, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,651 INFO scheduler.TaskSetManager: Starting task 69.0 in stage 1.0 (TID 73) (198.202.103.5, executor 5, partition 69, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,652 INFO scheduler.TaskSetManager: Starting task 70.0 in stage 1.0 (TID 74) (198.202.103.5, executor 4, partition 70, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,652 INFO scheduler.TaskSetManager: Starting task 71.0 in stage 1.0 (TID 75) (198.202.103.5, executor 6, partition 71, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,652 INFO scheduler.TaskSetManager: Starting task 72.0 in stage 1.0 (TID 76) (198.202.103.5, executor 1, partition 72, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,652 INFO scheduler.TaskSetManager: Starting task 73.0 in stage 1.0 (TID 77) (198.202.103.5, executor 8, partition 73, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,652 INFO scheduler.TaskSetManager: Starting task 74.0 in stage 1.0 (TID 78) (198.202.103.5, executor 7, partition 74, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,652 INFO scheduler.TaskSetManager: Starting task 75.0 in stage 1.0 (TID 79) (198.202.103.5, executor 3, partition 75, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,653 INFO scheduler.TaskSetManager: Starting task 76.0 in stage 1.0 (TID 80) (198.202.103.5, executor 0, partition 76, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,653 INFO scheduler.TaskSetManager: Starting task 77.0 in stage 1.0 (TID 81) (198.202.103.5, executor 9, partition 77, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,653 INFO scheduler.TaskSetManager: Starting task 78.0 in stage 1.0 (TID 82) (198.202.103.5, executor 2, partition 78, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,653 INFO scheduler.TaskSetManager: Starting task 79.0 in stage 1.0 (TID 83) (198.202.103.5, executor 5, partition 79, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,653 INFO scheduler.TaskSetManager: Starting task 80.0 in stage 1.0 (TID 84) (198.202.103.5, executor 4, partition 80, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,653 INFO scheduler.TaskSetManager: Starting task 81.0 in stage 1.0 (TID 85) (198.202.103.5, executor 6, partition 81, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,654 INFO scheduler.TaskSetManager: Starting task 82.0 in stage 1.0 (TID 86) (198.202.103.5, executor 1, partition 82, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,654 INFO scheduler.TaskSetManager: Starting task 83.0 in stage 1.0 (TID 87) (198.202.103.5, executor 8, partition 83, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,654 INFO scheduler.TaskSetManager: Starting task 84.0 in stage 1.0 (TID 88) (198.202.103.5, executor 7, partition 84, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,654 INFO scheduler.TaskSetManager: Starting task 85.0 in stage 1.0 (TID 89) (198.202.103.5, executor 3, partition 85, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,655 INFO scheduler.TaskSetManager: Starting task 86.0 in stage 1.0 (TID 90) (198.202.103.5, executor 0, partition 86, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,655 INFO scheduler.TaskSetManager: Starting task 87.0 in stage 1.0 (TID 91) (198.202.103.5, executor 9, partition 87, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,655 INFO scheduler.TaskSetManager: Starting task 88.0 in stage 1.0 (TID 92) (198.202.103.5, executor 2, partition 88, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,655 INFO scheduler.TaskSetManager: Starting task 89.0 in stage 1.0 (TID 93) (198.202.103.5, executor 5, partition 89, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,655 INFO scheduler.TaskSetManager: Starting task 90.0 in stage 1.0 (TID 94) (198.202.103.5, executor 4, partition 90, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,655 INFO scheduler.TaskSetManager: Starting task 91.0 in stage 1.0 (TID 95) (198.202.103.5, executor 6, partition 91, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,656 INFO scheduler.TaskSetManager: Starting task 92.0 in stage 1.0 (TID 96) (198.202.103.5, executor 1, partition 92, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,656 INFO scheduler.TaskSetManager: Starting task 93.0 in stage 1.0 (TID 97) (198.202.103.5, executor 8, partition 93, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,656 INFO scheduler.TaskSetManager: Starting task 94.0 in stage 1.0 (TID 98) (198.202.103.5, executor 7, partition 94, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,656 INFO scheduler.TaskSetManager: Starting task 95.0 in stage 1.0 (TID 99) (198.202.103.5, executor 3, partition 95, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,656 INFO scheduler.TaskSetManager: Starting task 96.0 in stage 1.0 (TID 100) (198.202.103.5, executor 0, partition 96, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,657 INFO scheduler.TaskSetManager: Starting task 97.0 in stage 1.0 (TID 101) (198.202.103.5, executor 9, partition 97, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,657 INFO scheduler.TaskSetManager: Starting task 98.0 in stage 1.0 (TID 102) (198.202.103.5, executor 2, partition 98, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,657 INFO scheduler.TaskSetManager: Starting task 99.0 in stage 1.0 (TID 103) (198.202.103.5, executor 5, partition 99, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,657 INFO scheduler.TaskSetManager: Starting task 100.0 in stage 1.0 (TID 104) (198.202.103.5, executor 4, partition 100, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,657 INFO scheduler.TaskSetManager: Starting task 101.0 in stage 1.0 (TID 105) (198.202.103.5, executor 6, partition 101, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,658 INFO scheduler.TaskSetManager: Starting task 102.0 in stage 1.0 (TID 106) (198.202.103.5, executor 1, partition 102, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,658 INFO scheduler.TaskSetManager: Starting task 103.0 in stage 1.0 (TID 107) (198.202.103.5, executor 8, partition 103, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,658 INFO scheduler.TaskSetManager: Starting task 104.0 in stage 1.0 (TID 108) (198.202.103.5, executor 7, partition 104, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,658 INFO scheduler.TaskSetManager: Starting task 105.0 in stage 1.0 (TID 109) (198.202.103.5, executor 3, partition 105, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,658 INFO scheduler.TaskSetManager: Starting task 106.0 in stage 1.0 (TID 110) (198.202.103.5, executor 0, partition 106, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,658 INFO scheduler.TaskSetManager: Starting task 107.0 in stage 1.0 (TID 111) (198.202.103.5, executor 9, partition 107, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,659 INFO scheduler.TaskSetManager: Starting task 108.0 in stage 1.0 (TID 112) (198.202.103.5, executor 2, partition 108, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,659 INFO scheduler.TaskSetManager: Starting task 109.0 in stage 1.0 (TID 113) (198.202.103.5, executor 5, partition 109, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,659 INFO scheduler.TaskSetManager: Starting task 110.0 in stage 1.0 (TID 114) (198.202.103.5, executor 4, partition 110, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,659 INFO scheduler.TaskSetManager: Starting task 111.0 in stage 1.0 (TID 115) (198.202.103.5, executor 6, partition 111, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,659 INFO scheduler.TaskSetManager: Starting task 112.0 in stage 1.0 (TID 116) (198.202.103.5, executor 1, partition 112, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,659 INFO scheduler.TaskSetManager: Starting task 113.0 in stage 1.0 (TID 117) (198.202.103.5, executor 8, partition 113, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,660 INFO scheduler.TaskSetManager: Starting task 114.0 in stage 1.0 (TID 118) (198.202.103.5, executor 7, partition 114, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,660 INFO scheduler.TaskSetManager: Starting task 115.0 in stage 1.0 (TID 119) (198.202.103.5, executor 3, partition 115, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,660 INFO scheduler.TaskSetManager: Starting task 116.0 in stage 1.0 (TID 120) (198.202.103.5, executor 0, partition 116, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,660 INFO scheduler.TaskSetManager: Starting task 117.0 in stage 1.0 (TID 121) (198.202.103.5, executor 9, partition 117, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,660 INFO scheduler.TaskSetManager: Starting task 118.0 in stage 1.0 (TID 122) (198.202.103.5, executor 2, partition 118, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,661 INFO scheduler.TaskSetManager: Starting task 119.0 in stage 1.0 (TID 123) (198.202.103.5, executor 5, partition 119, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:23,713 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 198.202.103.5:33855 (size: 19.3 KiB, free: 14.2 GiB)
+2022-11-22 12:48:23,727 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 198.202.103.5:46035 (size: 19.3 KiB, free: 14.2 GiB)
+2022-11-22 12:48:23,728 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 198.202.103.5:34947 (size: 19.3 KiB, free: 14.2 GiB)
+2022-11-22 12:48:23,754 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 198.202.103.5:36453 (size: 19.3 KiB, free: 14.2 GiB)
+2022-11-22 12:48:23,784 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 198.202.103.5:49594
+2022-11-22 12:48:23,800 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 198.202.103.5:49580
+2022-11-22 12:48:23,807 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 198.202.103.5:49592
+2022-11-22 12:48:23,837 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 198.202.103.5:49582
+2022-11-22 12:48:23,868 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 198.202.103.5:38429 (size: 19.3 KiB, free: 14.2 GiB)
+2022-11-22 12:48:23,872 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 198.202.103.5:45789 (size: 19.3 KiB, free: 14.2 GiB)
+2022-11-22 12:48:23,890 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 198.202.103.5:41423 (size: 19.3 KiB, free: 14.2 GiB)
+2022-11-22 12:48:23,893 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 198.202.103.5:33635 (size: 19.3 KiB, free: 14.2 GiB)
+2022-11-22 12:48:23,893 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 198.202.103.5:44571 (size: 19.3 KiB, free: 14.2 GiB)
+2022-11-22 12:48:23,893 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 198.202.103.5:34705 (size: 19.3 KiB, free: 14.2 GiB)
+2022-11-22 12:48:24,236 INFO scheduler.TaskSetManager: Starting task 120.0 in stage 1.0 (TID 124) (198.202.103.5, executor 9, partition 120, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,237 INFO scheduler.TaskSetManager: Finished task 67.0 in stage 1.0 (TID 71) in 586 ms on 198.202.103.5 (executor 9) (1/200)
+2022-11-22 12:48:24,238 INFO scheduler.TaskSetManager: Starting task 121.0 in stage 1.0 (TID 125) (198.202.103.5, executor 9, partition 121, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,238 INFO scheduler.TaskSetManager: Starting task 122.0 in stage 1.0 (TID 126) (198.202.103.5, executor 9, partition 122, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,238 INFO scheduler.TaskSetManager: Finished task 117.0 in stage 1.0 (TID 121) in 578 ms on 198.202.103.5 (executor 9) (2/200)
+2022-11-22 12:48:24,239 INFO scheduler.TaskSetManager: Finished task 17.0 in stage 1.0 (TID 21) in 598 ms on 198.202.103.5 (executor 9) (3/200)
+2022-11-22 12:48:24,254 INFO scheduler.TaskSetManager: Starting task 123.0 in stage 1.0 (TID 127) (198.202.103.5, executor 2, partition 123, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,255 INFO scheduler.TaskSetManager: Finished task 58.0 in stage 1.0 (TID 62) in 606 ms on 198.202.103.5 (executor 2) (4/200)
+2022-11-22 12:48:24,258 INFO scheduler.TaskSetManager: Starting task 124.0 in stage 1.0 (TID 128) (198.202.103.5, executor 2, partition 124, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,259 INFO scheduler.TaskSetManager: Starting task 125.0 in stage 1.0 (TID 129) (198.202.103.5, executor 2, partition 125, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,259 INFO scheduler.TaskSetManager: Finished task 8.0 in stage 1.0 (TID 12) in 620 ms on 198.202.103.5 (executor 2) (5/200)
+2022-11-22 12:48:24,259 INFO scheduler.TaskSetManager: Finished task 78.0 in stage 1.0 (TID 82) in 606 ms on 198.202.103.5 (executor 2) (6/200)
+2022-11-22 12:48:24,261 INFO scheduler.TaskSetManager: Starting task 126.0 in stage 1.0 (TID 130) (198.202.103.5, executor 2, partition 126, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,261 INFO scheduler.TaskSetManager: Starting task 127.0 in stage 1.0 (TID 131) (198.202.103.5, executor 2, partition 127, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,261 INFO scheduler.TaskSetManager: Finished task 68.0 in stage 1.0 (TID 72) in 610 ms on 198.202.103.5 (executor 2) (7/200)
+2022-11-22 12:48:24,262 INFO scheduler.TaskSetManager: Finished task 98.0 in stage 1.0 (TID 102) in 605 ms on 198.202.103.5 (executor 2) (8/200)
+2022-11-22 12:48:24,263 INFO scheduler.TaskSetManager: Starting task 128.0 in stage 1.0 (TID 132) (198.202.103.5, executor 2, partition 128, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,263 INFO scheduler.TaskSetManager: Finished task 48.0 in stage 1.0 (TID 52) in 616 ms on 198.202.103.5 (executor 2) (9/200)
+2022-11-22 12:48:24,264 INFO scheduler.TaskSetManager: Starting task 129.0 in stage 1.0 (TID 133) (198.202.103.5, executor 2, partition 129, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,264 INFO scheduler.TaskSetManager: Finished task 28.0 in stage 1.0 (TID 32) in 621 ms on 198.202.103.5 (executor 2) (10/200)
+2022-11-22 12:48:24,265 INFO scheduler.TaskSetManager: Starting task 130.0 in stage 1.0 (TID 134) (198.202.103.5, executor 2, partition 130, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,265 INFO scheduler.TaskSetManager: Starting task 131.0 in stage 1.0 (TID 135) (198.202.103.5, executor 2, partition 131, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,266 INFO scheduler.TaskSetManager: Starting task 132.0 in stage 1.0 (TID 136) (198.202.103.5, executor 2, partition 132, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,267 INFO scheduler.TaskSetManager: Starting task 133.0 in stage 1.0 (TID 137) (198.202.103.5, executor 2, partition 133, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,267 INFO scheduler.TaskSetManager: Finished task 18.0 in stage 1.0 (TID 22) in 626 ms on 198.202.103.5 (executor 2) (11/200)
+2022-11-22 12:48:24,268 INFO scheduler.TaskSetManager: Finished task 108.0 in stage 1.0 (TID 112) in 610 ms on 198.202.103.5 (executor 2) (12/200)
+2022-11-22 12:48:24,268 INFO scheduler.TaskSetManager: Finished task 118.0 in stage 1.0 (TID 122) in 608 ms on 198.202.103.5 (executor 2) (13/200)
+2022-11-22 12:48:24,268 INFO scheduler.TaskSetManager: Finished task 38.0 in stage 1.0 (TID 42) in 623 ms on 198.202.103.5 (executor 2) (14/200)
+2022-11-22 12:48:24,272 INFO scheduler.TaskSetManager: Starting task 134.0 in stage 1.0 (TID 138) (198.202.103.5, executor 2, partition 134, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,272 INFO scheduler.TaskSetManager: Finished task 88.0 in stage 1.0 (TID 92) in 617 ms on 198.202.103.5 (executor 2) (15/200)
+2022-11-22 12:48:24,276 INFO scheduler.TaskSetManager: Starting task 135.0 in stage 1.0 (TID 139) (198.202.103.5, executor 9, partition 135, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,276 INFO scheduler.TaskSetManager: Finished task 107.0 in stage 1.0 (TID 111) in 618 ms on 198.202.103.5 (executor 9) (16/200)
+2022-11-22 12:48:24,276 INFO scheduler.TaskSetManager: Starting task 136.0 in stage 1.0 (TID 140) (198.202.103.5, executor 9, partition 136, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,277 INFO scheduler.TaskSetManager: Finished task 57.0 in stage 1.0 (TID 61) in 628 ms on 198.202.103.5 (executor 9) (17/200)
+2022-11-22 12:48:24,280 INFO scheduler.TaskSetManager: Starting task 137.0 in stage 1.0 (TID 141) (198.202.103.5, executor 9, partition 137, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,280 INFO scheduler.TaskSetManager: Starting task 138.0 in stage 1.0 (TID 142) (198.202.103.5, executor 9, partition 138, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,282 INFO scheduler.TaskSetManager: Finished task 97.0 in stage 1.0 (TID 101) in 625 ms on 198.202.103.5 (executor 9) (18/200)
+2022-11-22 12:48:24,282 INFO scheduler.TaskSetManager: Finished task 7.0 in stage 1.0 (TID 11) in 643 ms on 198.202.103.5 (executor 9) (19/200)
+2022-11-22 12:48:24,283 INFO scheduler.TaskSetManager: Starting task 139.0 in stage 1.0 (TID 143) (198.202.103.5, executor 9, partition 139, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,284 INFO scheduler.TaskSetManager: Finished task 87.0 in stage 1.0 (TID 91) in 629 ms on 198.202.103.5 (executor 9) (20/200)
+2022-11-22 12:48:24,285 INFO scheduler.TaskSetManager: Starting task 140.0 in stage 1.0 (TID 144) (198.202.103.5, executor 9, partition 140, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,285 INFO scheduler.TaskSetManager: Finished task 37.0 in stage 1.0 (TID 41) in 640 ms on 198.202.103.5 (executor 9) (21/200)
+2022-11-22 12:48:24,287 INFO scheduler.TaskSetManager: Starting task 141.0 in stage 1.0 (TID 145) (198.202.103.5, executor 9, partition 141, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,289 INFO scheduler.TaskSetManager: Starting task 142.0 in stage 1.0 (TID 146) (198.202.103.5, executor 9, partition 142, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,289 INFO scheduler.TaskSetManager: Finished task 77.0 in stage 1.0 (TID 81) in 636 ms on 198.202.103.5 (executor 9) (22/200)
+2022-11-22 12:48:24,290 INFO scheduler.TaskSetManager: Finished task 27.0 in stage 1.0 (TID 31) in 647 ms on 198.202.103.5 (executor 9) (23/200)
+2022-11-22 12:48:24,291 INFO scheduler.TaskSetManager: Starting task 143.0 in stage 1.0 (TID 147) (198.202.103.5, executor 9, partition 143, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,291 INFO scheduler.TaskSetManager: Finished task 47.0 in stage 1.0 (TID 51) in 644 ms on 198.202.103.5 (executor 9) (24/200)
+2022-11-22 12:48:24,312 INFO scheduler.TaskSetManager: Starting task 144.0 in stage 1.0 (TID 148) (198.202.103.5, executor 2, partition 144, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,313 INFO scheduler.TaskSetManager: Finished task 124.0 in stage 1.0 (TID 128) in 55 ms on 198.202.103.5 (executor 2) (25/200)
+2022-11-22 12:48:24,313 INFO scheduler.TaskSetManager: Starting task 145.0 in stage 1.0 (TID 149) (198.202.103.5, executor 2, partition 145, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,314 INFO scheduler.TaskSetManager: Finished task 125.0 in stage 1.0 (TID 129) in 55 ms on 198.202.103.5 (executor 2) (26/200)
+2022-11-22 12:48:24,321 INFO scheduler.TaskSetManager: Starting task 146.0 in stage 1.0 (TID 150) (198.202.103.5, executor 9, partition 146, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,321 INFO scheduler.TaskSetManager: Starting task 147.0 in stage 1.0 (TID 151) (198.202.103.5, executor 9, partition 147, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,323 INFO scheduler.TaskSetManager: Finished task 122.0 in stage 1.0 (TID 126) in 85 ms on 198.202.103.5 (executor 9) (27/200)
+2022-11-22 12:48:24,323 INFO scheduler.TaskSetManager: Finished task 121.0 in stage 1.0 (TID 125) in 85 ms on 198.202.103.5 (executor 9) (28/200)
+2022-11-22 12:48:24,325 INFO scheduler.TaskSetManager: Starting task 148.0 in stage 1.0 (TID 152) (198.202.103.5, executor 2, partition 148, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,325 INFO scheduler.TaskSetManager: Finished task 126.0 in stage 1.0 (TID 130) in 65 ms on 198.202.103.5 (executor 2) (29/200)
+2022-11-22 12:48:24,327 INFO scheduler.TaskSetManager: Starting task 149.0 in stage 1.0 (TID 153) (198.202.103.5, executor 2, partition 149, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,327 INFO scheduler.TaskSetManager: Starting task 150.0 in stage 1.0 (TID 154) (198.202.103.5, executor 2, partition 150, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,328 INFO scheduler.TaskSetManager: Finished task 128.0 in stage 1.0 (TID 132) in 64 ms on 198.202.103.5 (executor 2) (30/200)
+2022-11-22 12:48:24,328 INFO scheduler.TaskSetManager: Starting task 151.0 in stage 1.0 (TID 155) (198.202.103.5, executor 9, partition 151, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,328 INFO scheduler.TaskSetManager: Finished task 120.0 in stage 1.0 (TID 124) in 92 ms on 198.202.103.5 (executor 9) (31/200)
+2022-11-22 12:48:24,328 INFO scheduler.TaskSetManager: Finished task 133.0 in stage 1.0 (TID 137) in 61 ms on 198.202.103.5 (executor 2) (32/200)
+2022-11-22 12:48:24,329 INFO scheduler.TaskSetManager: Starting task 152.0 in stage 1.0 (TID 156) (198.202.103.5, executor 2, partition 152, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,329 INFO scheduler.TaskSetManager: Finished task 130.0 in stage 1.0 (TID 134) in 64 ms on 198.202.103.5 (executor 2) (33/200)
+2022-11-22 12:48:24,339 INFO scheduler.TaskSetManager: Starting task 153.0 in stage 1.0 (TID 157) (198.202.103.5, executor 2, partition 153, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,340 INFO scheduler.TaskSetManager: Finished task 127.0 in stage 1.0 (TID 131) in 78 ms on 198.202.103.5 (executor 2) (34/200)
+2022-11-22 12:48:24,343 INFO scheduler.TaskSetManager: Starting task 154.0 in stage 1.0 (TID 158) (198.202.103.5, executor 9, partition 154, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,343 INFO scheduler.TaskSetManager: Finished task 139.0 in stage 1.0 (TID 143) in 60 ms on 198.202.103.5 (executor 9) (35/200)
+2022-11-22 12:48:24,354 INFO scheduler.TaskSetManager: Starting task 155.0 in stage 1.0 (TID 159) (198.202.103.5, executor 0, partition 155, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,355 INFO scheduler.TaskSetManager: Finished task 36.0 in stage 1.0 (TID 40) in 710 ms on 198.202.103.5 (executor 0) (36/200)
+2022-11-22 12:48:24,359 INFO scheduler.TaskSetManager: Starting task 156.0 in stage 1.0 (TID 160) (198.202.103.5, executor 9, partition 156, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,360 INFO scheduler.TaskSetManager: Starting task 157.0 in stage 1.0 (TID 161) (198.202.103.5, executor 9, partition 157, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,360 INFO scheduler.TaskSetManager: Finished task 137.0 in stage 1.0 (TID 141) in 81 ms on 198.202.103.5 (executor 9) (37/200)
+2022-11-22 12:48:24,361 INFO scheduler.TaskSetManager: Starting task 158.0 in stage 1.0 (TID 162) (198.202.103.5, executor 9, partition 158, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,361 INFO scheduler.TaskSetManager: Finished task 140.0 in stage 1.0 (TID 144) in 76 ms on 198.202.103.5 (executor 9) (38/200)
+2022-11-22 12:48:24,362 INFO scheduler.TaskSetManager: Starting task 159.0 in stage 1.0 (TID 163) (198.202.103.5, executor 2, partition 159, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,362 INFO scheduler.TaskSetManager: Finished task 136.0 in stage 1.0 (TID 140) in 86 ms on 198.202.103.5 (executor 9) (39/200)
+2022-11-22 12:48:24,362 INFO scheduler.TaskSetManager: Starting task 160.0 in stage 1.0 (TID 164) (198.202.103.5, executor 2, partition 160, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,362 INFO scheduler.TaskSetManager: Finished task 131.0 in stage 1.0 (TID 135) in 97 ms on 198.202.103.5 (executor 2) (40/200)
+2022-11-22 12:48:24,363 INFO scheduler.TaskSetManager: Starting task 161.0 in stage 1.0 (TID 165) (198.202.103.5, executor 2, partition 161, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,363 INFO scheduler.TaskSetManager: Finished task 134.0 in stage 1.0 (TID 138) in 92 ms on 198.202.103.5 (executor 2) (41/200)
+2022-11-22 12:48:24,363 INFO scheduler.TaskSetManager: Starting task 162.0 in stage 1.0 (TID 166) (198.202.103.5, executor 2, partition 162, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,363 INFO scheduler.TaskSetManager: Finished task 129.0 in stage 1.0 (TID 133) in 99 ms on 198.202.103.5 (executor 2) (42/200)
+2022-11-22 12:48:24,363 INFO scheduler.TaskSetManager: Finished task 123.0 in stage 1.0 (TID 127) in 110 ms on 198.202.103.5 (executor 2) (43/200)
+2022-11-22 12:48:24,379 INFO scheduler.TaskSetManager: Starting task 163.0 in stage 1.0 (TID 167) (198.202.103.5, executor 0, partition 163, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,379 INFO scheduler.TaskSetManager: Starting task 164.0 in stage 1.0 (TID 168) (198.202.103.5, executor 0, partition 164, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,380 INFO scheduler.TaskSetManager: Starting task 165.0 in stage 1.0 (TID 169) (198.202.103.5, executor 0, partition 165, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,382 INFO scheduler.TaskSetManager: Finished task 16.0 in stage 1.0 (TID 20) in 740 ms on 198.202.103.5 (executor 0) (44/200)
+2022-11-22 12:48:24,382 INFO scheduler.TaskSetManager: Finished task 86.0 in stage 1.0 (TID 90) in 728 ms on 198.202.103.5 (executor 0) (45/200)
+2022-11-22 12:48:24,383 INFO scheduler.TaskSetManager: Finished task 6.0 in stage 1.0 (TID 10) in 743 ms on 198.202.103.5 (executor 0) (46/200)
+2022-11-22 12:48:24,386 INFO scheduler.TaskSetManager: Starting task 166.0 in stage 1.0 (TID 170) (198.202.103.5, executor 0, partition 166, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,387 INFO scheduler.TaskSetManager: Starting task 167.0 in stage 1.0 (TID 171) (198.202.103.5, executor 0, partition 167, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,387 INFO scheduler.TaskSetManager: Starting task 168.0 in stage 1.0 (TID 172) (198.202.103.5, executor 0, partition 168, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,388 INFO scheduler.TaskSetManager: Finished task 96.0 in stage 1.0 (TID 100) in 732 ms on 198.202.103.5 (executor 0) (47/200)
+2022-11-22 12:48:24,388 INFO scheduler.TaskSetManager: Finished task 66.0 in stage 1.0 (TID 70) in 737 ms on 198.202.103.5 (executor 0) (48/200)
+2022-11-22 12:48:24,389 INFO scheduler.TaskSetManager: Starting task 169.0 in stage 1.0 (TID 173) (198.202.103.5, executor 0, partition 169, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,390 INFO scheduler.TaskSetManager: Finished task 106.0 in stage 1.0 (TID 110) in 732 ms on 198.202.103.5 (executor 0) (49/200)
+2022-11-22 12:48:24,392 INFO scheduler.TaskSetManager: Starting task 170.0 in stage 1.0 (TID 174) (198.202.103.5, executor 2, partition 170, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,392 INFO scheduler.TaskSetManager: Finished task 76.0 in stage 1.0 (TID 80) in 740 ms on 198.202.103.5 (executor 0) (50/200)
+2022-11-22 12:48:24,392 INFO scheduler.TaskSetManager: Finished task 132.0 in stage 1.0 (TID 136) in 127 ms on 198.202.103.5 (executor 2) (51/200)
+2022-11-22 12:48:24,394 INFO scheduler.TaskSetManager: Starting task 171.0 in stage 1.0 (TID 175) (198.202.103.5, executor 2, partition 171, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,394 INFO scheduler.TaskSetManager: Starting task 172.0 in stage 1.0 (TID 176) (198.202.103.5, executor 2, partition 172, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,395 INFO scheduler.TaskSetManager: Finished task 144.0 in stage 1.0 (TID 148) in 83 ms on 198.202.103.5 (executor 2) (52/200)
+2022-11-22 12:48:24,395 INFO scheduler.TaskSetManager: Starting task 173.0 in stage 1.0 (TID 177) (198.202.103.5, executor 2, partition 173, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,396 INFO scheduler.TaskSetManager: Finished task 152.0 in stage 1.0 (TID 156) in 67 ms on 198.202.103.5 (executor 2) (53/200)
+2022-11-22 12:48:24,396 INFO scheduler.TaskSetManager: Finished task 145.0 in stage 1.0 (TID 149) in 83 ms on 198.202.103.5 (executor 2) (54/200)
+2022-11-22 12:48:24,398 INFO scheduler.TaskSetManager: Starting task 174.0 in stage 1.0 (TID 178) (198.202.103.5, executor 2, partition 174, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,399 INFO scheduler.TaskSetManager: Finished task 149.0 in stage 1.0 (TID 153) in 72 ms on 198.202.103.5 (executor 2) (55/200)
+2022-11-22 12:48:24,403 INFO scheduler.TaskSetManager: Starting task 175.0 in stage 1.0 (TID 179) (198.202.103.5, executor 2, partition 175, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,403 INFO scheduler.TaskSetManager: Finished task 150.0 in stage 1.0 (TID 154) in 76 ms on 198.202.103.5 (executor 2) (56/200)
+2022-11-22 12:48:24,408 INFO scheduler.TaskSetManager: Starting task 176.0 in stage 1.0 (TID 180) (198.202.103.5, executor 0, partition 176, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,409 INFO scheduler.TaskSetManager: Starting task 177.0 in stage 1.0 (TID 181) (198.202.103.5, executor 0, partition 177, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,409 INFO scheduler.TaskSetManager: Starting task 178.0 in stage 1.0 (TID 182) (198.202.103.5, executor 2, partition 178, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,410 INFO scheduler.TaskSetManager: Starting task 179.0 in stage 1.0 (TID 183) (198.202.103.5, executor 1, partition 179, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,411 INFO scheduler.TaskSetManager: Starting task 180.0 in stage 1.0 (TID 184) (198.202.103.5, executor 1, partition 180, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,411 INFO scheduler.TaskSetManager: Starting task 181.0 in stage 1.0 (TID 185) (198.202.103.5, executor 9, partition 181, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,412 INFO scheduler.TaskSetManager: Starting task 182.0 in stage 1.0 (TID 186) (198.202.103.5, executor 9, partition 182, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,413 INFO scheduler.TaskSetManager: Finished task 32.0 in stage 1.0 (TID 36) in 768 ms on 198.202.103.5 (executor 1) (57/200)
+2022-11-22 12:48:24,413 INFO scheduler.TaskSetManager: Finished task 148.0 in stage 1.0 (TID 152) in 88 ms on 198.202.103.5 (executor 2) (58/200)
+2022-11-22 12:48:24,413 INFO scheduler.TaskSetManager: Finished task 143.0 in stage 1.0 (TID 147) in 122 ms on 198.202.103.5 (executor 9) (59/200)
+2022-11-22 12:48:24,414 INFO scheduler.TaskSetManager: Finished task 147.0 in stage 1.0 (TID 151) in 93 ms on 198.202.103.5 (executor 9) (60/200)
+2022-11-22 12:48:24,414 INFO scheduler.TaskSetManager: Finished task 26.0 in stage 1.0 (TID 30) in 771 ms on 198.202.103.5 (executor 0) (61/200)
+2022-11-22 12:48:24,414 INFO scheduler.TaskSetManager: Starting task 183.0 in stage 1.0 (TID 187) (198.202.103.5, executor 0, partition 183, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,416 INFO scheduler.TaskSetManager: Finished task 116.0 in stage 1.0 (TID 120) in 756 ms on 198.202.103.5 (executor 0) (62/200)
+2022-11-22 12:48:24,416 INFO scheduler.TaskSetManager: Finished task 92.0 in stage 1.0 (TID 96) in 761 ms on 198.202.103.5 (executor 1) (63/200)
+2022-11-22 12:48:24,417 INFO scheduler.TaskSetManager: Finished task 56.0 in stage 1.0 (TID 60) in 768 ms on 198.202.103.5 (executor 0) (64/200)
+2022-11-22 12:48:24,421 INFO scheduler.TaskSetManager: Starting task 184.0 in stage 1.0 (TID 188) (198.202.103.5, executor 0, partition 184, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,423 INFO scheduler.TaskSetManager: Starting task 185.0 in stage 1.0 (TID 189) (198.202.103.5, executor 9, partition 185, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,424 INFO scheduler.TaskSetManager: Starting task 186.0 in stage 1.0 (TID 190) (198.202.103.5, executor 9, partition 186, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,424 INFO scheduler.TaskSetManager: Starting task 187.0 in stage 1.0 (TID 191) (198.202.103.5, executor 1, partition 187, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,425 INFO scheduler.TaskSetManager: Starting task 188.0 in stage 1.0 (TID 192) (198.202.103.5, executor 1, partition 188, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,426 INFO scheduler.TaskSetManager: Starting task 189.0 in stage 1.0 (TID 193) (198.202.103.5, executor 9, partition 189, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,426 INFO scheduler.TaskSetManager: Finished task 46.0 in stage 1.0 (TID 50) in 779 ms on 198.202.103.5 (executor 0) (65/200)
+2022-11-22 12:48:24,426 INFO scheduler.TaskSetManager: Finished task 138.0 in stage 1.0 (TID 142) in 146 ms on 198.202.103.5 (executor 9) (66/200)
+2022-11-22 12:48:24,426 INFO scheduler.TaskSetManager: Finished task 141.0 in stage 1.0 (TID 145) in 139 ms on 198.202.103.5 (executor 9) (67/200)
+2022-11-22 12:48:24,427 INFO scheduler.TaskSetManager: Finished task 52.0 in stage 1.0 (TID 56) in 779 ms on 198.202.103.5 (executor 1) (68/200)
+2022-11-22 12:48:24,427 INFO scheduler.TaskSetManager: Finished task 142.0 in stage 1.0 (TID 146) in 138 ms on 198.202.103.5 (executor 9) (69/200)
+2022-11-22 12:48:24,427 INFO scheduler.TaskSetManager: Finished task 82.0 in stage 1.0 (TID 86) in 773 ms on 198.202.103.5 (executor 1) (70/200)
+2022-11-22 12:48:24,428 INFO scheduler.TaskSetManager: Starting task 190.0 in stage 1.0 (TID 194) (198.202.103.5, executor 1, partition 190, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,428 INFO scheduler.TaskSetManager: Finished task 62.0 in stage 1.0 (TID 66) in 778 ms on 198.202.103.5 (executor 1) (71/200)
+2022-11-22 12:48:24,428 INFO scheduler.TaskSetManager: Starting task 191.0 in stage 1.0 (TID 195) (198.202.103.5, executor 9, partition 191, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,429 INFO scheduler.TaskSetManager: Finished task 135.0 in stage 1.0 (TID 139) in 154 ms on 198.202.103.5 (executor 9) (72/200)
+2022-11-22 12:48:24,440 INFO scheduler.TaskSetManager: Starting task 192.0 in stage 1.0 (TID 196) (198.202.103.5, executor 2, partition 192, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,441 INFO scheduler.TaskSetManager: Finished task 153.0 in stage 1.0 (TID 157) in 102 ms on 198.202.103.5 (executor 2) (73/200)
+2022-11-22 12:48:24,442 INFO scheduler.TaskSetManager: Starting task 193.0 in stage 1.0 (TID 197) (198.202.103.5, executor 0, partition 193, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,443 INFO scheduler.TaskSetManager: Finished task 155.0 in stage 1.0 (TID 159) in 89 ms on 198.202.103.5 (executor 0) (74/200)
+2022-11-22 12:48:24,444 INFO scheduler.TaskSetManager: Starting task 194.0 in stage 1.0 (TID 198) (198.202.103.5, executor 1, partition 194, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,444 INFO scheduler.TaskSetManager: Finished task 72.0 in stage 1.0 (TID 76) in 792 ms on 198.202.103.5 (executor 1) (75/200)
+2022-11-22 12:48:24,445 INFO scheduler.TaskSetManager: Starting task 195.0 in stage 1.0 (TID 199) (198.202.103.5, executor 9, partition 195, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,445 INFO scheduler.TaskSetManager: Finished task 151.0 in stage 1.0 (TID 155) in 117 ms on 198.202.103.5 (executor 9) (76/200)
+2022-11-22 12:48:24,446 INFO scheduler.TaskSetManager: Starting task 196.0 in stage 1.0 (TID 200) (198.202.103.5, executor 9, partition 196, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,446 INFO scheduler.TaskSetManager: Finished task 146.0 in stage 1.0 (TID 150) in 126 ms on 198.202.103.5 (executor 9) (77/200)
+2022-11-22 12:48:24,449 INFO scheduler.TaskSetManager: Starting task 197.0 in stage 1.0 (TID 201) (198.202.103.5, executor 1, partition 197, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,449 INFO scheduler.TaskSetManager: Finished task 2.0 in stage 1.0 (TID 6) in 811 ms on 198.202.103.5 (executor 1) (78/200)
+2022-11-22 12:48:24,452 INFO scheduler.TaskSetManager: Starting task 198.0 in stage 1.0 (TID 202) (198.202.103.5, executor 1, partition 198, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,452 INFO scheduler.TaskSetManager: Starting task 199.0 in stage 1.0 (TID 203) (198.202.103.5, executor 2, partition 199, NODE_LOCAL, 4446 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:24,453 INFO scheduler.TaskSetManager: Finished task 159.0 in stage 1.0 (TID 163) in 91 ms on 198.202.103.5 (executor 2) (79/200)
+2022-11-22 12:48:24,455 INFO scheduler.TaskSetManager: Finished task 112.0 in stage 1.0 (TID 116) in 795 ms on 198.202.103.5 (executor 1) (80/200)
+2022-11-22 12:48:24,457 INFO scheduler.TaskSetManager: Finished task 22.0 in stage 1.0 (TID 26) in 815 ms on 198.202.103.5 (executor 1) (81/200)
+2022-11-22 12:48:24,457 INFO scheduler.TaskSetManager: Finished task 42.0 in stage 1.0 (TID 46) in 811 ms on 198.202.103.5 (executor 1) (82/200)
+2022-11-22 12:48:24,457 INFO scheduler.TaskSetManager: Finished task 154.0 in stage 1.0 (TID 158) in 115 ms on 198.202.103.5 (executor 9) (83/200)
+2022-11-22 12:48:24,458 INFO scheduler.TaskSetManager: Finished task 12.0 in stage 1.0 (TID 16) in 818 ms on 198.202.103.5 (executor 1) (84/200)
+2022-11-22 12:48:24,459 INFO scheduler.TaskSetManager: Finished task 156.0 in stage 1.0 (TID 160) in 99 ms on 198.202.103.5 (executor 9) (85/200)
+2022-11-22 12:48:24,461 INFO scheduler.TaskSetManager: Finished task 102.0 in stage 1.0 (TID 106) in 804 ms on 198.202.103.5 (executor 1) (86/200)
+2022-11-22 12:48:24,462 INFO scheduler.TaskSetManager: Finished task 162.0 in stage 1.0 (TID 166) in 99 ms on 198.202.103.5 (executor 2) (87/200)
+2022-11-22 12:48:24,468 INFO scheduler.TaskSetManager: Finished task 161.0 in stage 1.0 (TID 165) in 105 ms on 198.202.103.5 (executor 2) (88/200)
+2022-11-22 12:48:24,477 INFO scheduler.TaskSetManager: Finished task 157.0 in stage 1.0 (TID 161) in 116 ms on 198.202.103.5 (executor 9) (89/200)
+2022-11-22 12:48:24,480 INFO scheduler.TaskSetManager: Finished task 158.0 in stage 1.0 (TID 162) in 119 ms on 198.202.103.5 (executor 9) (90/200)
+2022-11-22 12:48:24,484 INFO scheduler.TaskSetManager: Finished task 163.0 in stage 1.0 (TID 167) in 106 ms on 198.202.103.5 (executor 0) (91/200)
+2022-11-22 12:48:24,490 INFO scheduler.TaskSetManager: Finished task 174.0 in stage 1.0 (TID 178) in 92 ms on 198.202.103.5 (executor 2) (92/200)
+2022-11-22 12:48:24,491 INFO scheduler.TaskSetManager: Finished task 175.0 in stage 1.0 (TID 179) in 89 ms on 198.202.103.5 (executor 2) (93/200)
+2022-11-22 12:48:24,498 INFO scheduler.TaskSetManager: Finished task 168.0 in stage 1.0 (TID 172) in 111 ms on 198.202.103.5 (executor 0) (94/200)
+2022-11-22 12:48:24,498 INFO scheduler.TaskSetManager: Finished task 170.0 in stage 1.0 (TID 174) in 107 ms on 198.202.103.5 (executor 2) (95/200)
+2022-11-22 12:48:24,498 INFO scheduler.TaskSetManager: Finished task 160.0 in stage 1.0 (TID 164) in 136 ms on 198.202.103.5 (executor 2) (96/200)
+2022-11-22 12:48:24,500 INFO scheduler.TaskSetManager: Finished task 169.0 in stage 1.0 (TID 173) in 110 ms on 198.202.103.5 (executor 0) (97/200)
+2022-11-22 12:48:24,507 INFO scheduler.TaskSetManager: Finished task 186.0 in stage 1.0 (TID 190) in 84 ms on 198.202.103.5 (executor 9) (98/200)
+2022-11-22 12:48:24,508 INFO scheduler.TaskSetManager: Finished task 176.0 in stage 1.0 (TID 180) in 100 ms on 198.202.103.5 (executor 0) (99/200)
+2022-11-22 12:48:24,508 INFO scheduler.TaskSetManager: Finished task 166.0 in stage 1.0 (TID 170) in 122 ms on 198.202.103.5 (executor 0) (100/200)
+2022-11-22 12:48:24,509 INFO scheduler.TaskSetManager: Finished task 173.0 in stage 1.0 (TID 177) in 114 ms on 198.202.103.5 (executor 2) (101/200)
+2022-11-22 12:48:24,512 INFO scheduler.TaskSetManager: Finished task 172.0 in stage 1.0 (TID 176) in 118 ms on 198.202.103.5 (executor 2) (102/200)
+2022-11-22 12:48:24,515 INFO scheduler.TaskSetManager: Finished task 165.0 in stage 1.0 (TID 169) in 134 ms on 198.202.103.5 (executor 0) (103/200)
+2022-11-22 12:48:24,515 INFO scheduler.TaskSetManager: Finished task 177.0 in stage 1.0 (TID 181) in 106 ms on 198.202.103.5 (executor 0) (104/200)
+2022-11-22 12:48:24,515 INFO scheduler.TaskSetManager: Finished task 183.0 in stage 1.0 (TID 187) in 101 ms on 198.202.103.5 (executor 0) (105/200)
+2022-11-22 12:48:24,516 INFO scheduler.TaskSetManager: Finished task 167.0 in stage 1.0 (TID 171) in 129 ms on 198.202.103.5 (executor 0) (106/200)
+2022-11-22 12:48:24,518 INFO scheduler.TaskSetManager: Finished task 164.0 in stage 1.0 (TID 168) in 139 ms on 198.202.103.5 (executor 0) (107/200)
+2022-11-22 12:48:24,521 INFO scheduler.TaskSetManager: Finished task 178.0 in stage 1.0 (TID 182) in 112 ms on 198.202.103.5 (executor 2) (108/200)
+2022-11-22 12:48:24,525 INFO scheduler.TaskSetManager: Finished task 195.0 in stage 1.0 (TID 199) in 80 ms on 198.202.103.5 (executor 9) (109/200)
+2022-11-22 12:48:24,525 INFO scheduler.TaskSetManager: Finished task 197.0 in stage 1.0 (TID 201) in 76 ms on 198.202.103.5 (executor 1) (110/200)
+2022-11-22 12:48:24,525 INFO scheduler.TaskSetManager: Finished task 189.0 in stage 1.0 (TID 193) in 99 ms on 198.202.103.5 (executor 9) (111/200)
+2022-11-22 12:48:24,527 INFO scheduler.TaskSetManager: Finished task 192.0 in stage 1.0 (TID 196) in 88 ms on 198.202.103.5 (executor 2) (112/200)
+2022-11-22 12:48:24,527 INFO scheduler.TaskSetManager: Finished task 194.0 in stage 1.0 (TID 198) in 83 ms on 198.202.103.5 (executor 1) (113/200)
+2022-11-22 12:48:24,527 INFO scheduler.TaskSetManager: Finished task 199.0 in stage 1.0 (TID 203) in 75 ms on 198.202.103.5 (executor 2) (114/200)
+2022-11-22 12:48:24,528 INFO scheduler.TaskSetManager: Finished task 196.0 in stage 1.0 (TID 200) in 83 ms on 198.202.103.5 (executor 9) (115/200)
+2022-11-22 12:48:24,529 INFO scheduler.TaskSetManager: Finished task 191.0 in stage 1.0 (TID 195) in 101 ms on 198.202.103.5 (executor 9) (116/200)
+2022-11-22 12:48:24,529 INFO scheduler.TaskSetManager: Finished task 182.0 in stage 1.0 (TID 186) in 117 ms on 198.202.103.5 (executor 9) (117/200)
+2022-11-22 12:48:24,530 INFO scheduler.TaskSetManager: Finished task 184.0 in stage 1.0 (TID 188) in 110 ms on 198.202.103.5 (executor 0) (118/200)
+2022-11-22 12:48:24,530 INFO scheduler.TaskSetManager: Finished task 185.0 in stage 1.0 (TID 189) in 107 ms on 198.202.103.5 (executor 9) (119/200)
+2022-11-22 12:48:24,530 INFO scheduler.TaskSetManager: Finished task 193.0 in stage 1.0 (TID 197) in 88 ms on 198.202.103.5 (executor 0) (120/200)
+2022-11-22 12:48:24,530 INFO scheduler.TaskSetManager: Finished task 171.0 in stage 1.0 (TID 175) in 137 ms on 198.202.103.5 (executor 2) (121/200)
+2022-11-22 12:48:24,531 INFO scheduler.TaskSetManager: Finished task 188.0 in stage 1.0 (TID 192) in 106 ms on 198.202.103.5 (executor 1) (122/200)
+2022-11-22 12:48:24,532 INFO scheduler.TaskSetManager: Finished task 187.0 in stage 1.0 (TID 191) in 108 ms on 198.202.103.5 (executor 1) (123/200)
+2022-11-22 12:48:24,533 INFO scheduler.TaskSetManager: Finished task 179.0 in stage 1.0 (TID 183) in 123 ms on 198.202.103.5 (executor 1) (124/200)
+2022-11-22 12:48:24,533 INFO scheduler.TaskSetManager: Finished task 180.0 in stage 1.0 (TID 184) in 122 ms on 198.202.103.5 (executor 1) (125/200)
+2022-11-22 12:48:24,535 INFO scheduler.TaskSetManager: Finished task 190.0 in stage 1.0 (TID 194) in 108 ms on 198.202.103.5 (executor 1) (126/200)
+2022-11-22 12:48:24,536 INFO scheduler.TaskSetManager: Finished task 181.0 in stage 1.0 (TID 185) in 125 ms on 198.202.103.5 (executor 9) (127/200)
+2022-11-22 12:48:24,542 INFO scheduler.TaskSetManager: Finished task 198.0 in stage 1.0 (TID 202) in 91 ms on 198.202.103.5 (executor 1) (128/200)
+2022-11-22 12:48:24,671 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 198.202.103.5:49590
+2022-11-22 12:48:24,687 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 198.202.103.5:49588
+2022-11-22 12:48:24,705 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 198.202.103.5:49578
+2022-11-22 12:48:24,709 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 198.202.103.5:49584
+2022-11-22 12:48:24,718 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 198.202.103.5:49596
+2022-11-22 12:48:24,766 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 198.202.103.5:49586
+2022-11-22 12:48:25,912 INFO scheduler.TaskSetManager: Finished task 104.0 in stage 1.0 (TID 108) in 2254 ms on 198.202.103.5 (executor 7) (129/200)
+2022-11-22 12:48:25,912 INFO scheduler.TaskSetManager: Finished task 4.0 in stage 1.0 (TID 8) in 2274 ms on 198.202.103.5 (executor 7) (130/200)
+2022-11-22 12:48:25,912 INFO scheduler.TaskSetManager: Finished task 114.0 in stage 1.0 (TID 118) in 2252 ms on 198.202.103.5 (executor 7) (131/200)
+2022-11-22 12:48:25,913 INFO scheduler.TaskSetManager: Finished task 94.0 in stage 1.0 (TID 98) in 2256 ms on 198.202.103.5 (executor 7) (132/200)
+2022-11-22 12:48:25,913 INFO scheduler.TaskSetManager: Finished task 14.0 in stage 1.0 (TID 18) in 2272 ms on 198.202.103.5 (executor 7) (133/200)
+2022-11-22 12:48:25,913 INFO scheduler.TaskSetManager: Finished task 84.0 in stage 1.0 (TID 88) in 2259 ms on 198.202.103.5 (executor 7) (134/200)
+2022-11-22 12:48:25,914 INFO scheduler.TaskSetManager: Finished task 24.0 in stage 1.0 (TID 28) in 2271 ms on 198.202.103.5 (executor 7) (135/200)
+2022-11-22 12:48:25,915 INFO scheduler.TaskSetManager: Finished task 64.0 in stage 1.0 (TID 68) in 2264 ms on 198.202.103.5 (executor 7) (136/200)
+2022-11-22 12:48:25,915 INFO scheduler.TaskSetManager: Finished task 54.0 in stage 1.0 (TID 58) in 2266 ms on 198.202.103.5 (executor 7) (137/200)
+2022-11-22 12:48:25,915 INFO scheduler.TaskSetManager: Finished task 74.0 in stage 1.0 (TID 78) in 2263 ms on 198.202.103.5 (executor 7) (138/200)
+2022-11-22 12:48:25,915 INFO scheduler.TaskSetManager: Finished task 34.0 in stage 1.0 (TID 38) in 2270 ms on 198.202.103.5 (executor 7) (139/200)
+2022-11-22 12:48:25,916 INFO scheduler.TaskSetManager: Finished task 44.0 in stage 1.0 (TID 48) in 2270 ms on 198.202.103.5 (executor 7) (140/200)
+2022-11-22 12:48:25,936 INFO scheduler.TaskSetManager: Finished task 70.0 in stage 1.0 (TID 74) in 2285 ms on 198.202.103.5 (executor 4) (141/200)
+2022-11-22 12:48:25,936 INFO scheduler.TaskSetManager: Finished task 30.0 in stage 1.0 (TID 34) in 2292 ms on 198.202.103.5 (executor 4) (142/200)
+2022-11-22 12:48:25,937 INFO scheduler.TaskSetManager: Finished task 20.0 in stage 1.0 (TID 24) in 2295 ms on 198.202.103.5 (executor 4) (143/200)
+2022-11-22 12:48:25,937 INFO scheduler.TaskSetManager: Finished task 80.0 in stage 1.0 (TID 84) in 2284 ms on 198.202.103.5 (executor 4) (144/200)
+2022-11-22 12:48:25,937 INFO scheduler.TaskSetManager: Finished task 10.0 in stage 1.0 (TID 14) in 2297 ms on 198.202.103.5 (executor 4) (145/200)
+2022-11-22 12:48:25,937 INFO scheduler.TaskSetManager: Finished task 110.0 in stage 1.0 (TID 114) in 2278 ms on 198.202.103.5 (executor 4) (146/200)
+2022-11-22 12:48:25,937 INFO scheduler.TaskSetManager: Finished task 90.0 in stage 1.0 (TID 94) in 2282 ms on 198.202.103.5 (executor 4) (147/200)
+2022-11-22 12:48:25,937 INFO scheduler.TaskSetManager: Finished task 100.0 in stage 1.0 (TID 104) in 2280 ms on 198.202.103.5 (executor 4) (148/200)
+2022-11-22 12:48:25,938 INFO scheduler.TaskSetManager: Finished task 40.0 in stage 1.0 (TID 44) in 2292 ms on 198.202.103.5 (executor 4) (149/200)
+2022-11-22 12:48:25,938 INFO scheduler.TaskSetManager: Finished task 50.0 in stage 1.0 (TID 54) in 2290 ms on 198.202.103.5 (executor 4) (150/200)
+2022-11-22 12:48:25,938 INFO scheduler.TaskSetManager: Finished task 60.0 in stage 1.0 (TID 64) in 2288 ms on 198.202.103.5 (executor 4) (151/200)
+2022-11-22 12:48:25,938 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 1.0 (TID 4) in 2303 ms on 198.202.103.5 (executor 4) (152/200)
+2022-11-22 12:48:25,961 INFO scheduler.TaskSetManager: Finished task 103.0 in stage 1.0 (TID 107) in 2303 ms on 198.202.103.5 (executor 8) (153/200)
+2022-11-22 12:48:25,961 INFO scheduler.TaskSetManager: Finished task 53.0 in stage 1.0 (TID 57) in 2313 ms on 198.202.103.5 (executor 8) (154/200)
+2022-11-22 12:48:25,961 INFO scheduler.TaskSetManager: Finished task 61.0 in stage 1.0 (TID 65) in 2311 ms on 198.202.103.5 (executor 6) (155/200)
+2022-11-22 12:48:25,961 INFO scheduler.TaskSetManager: Finished task 63.0 in stage 1.0 (TID 67) in 2311 ms on 198.202.103.5 (executor 8) (156/200)
+2022-11-22 12:48:25,961 INFO scheduler.TaskSetManager: Finished task 71.0 in stage 1.0 (TID 75) in 2309 ms on 198.202.103.5 (executor 6) (157/200)
+2022-11-22 12:48:25,961 INFO scheduler.TaskSetManager: Finished task 91.0 in stage 1.0 (TID 95) in 2306 ms on 198.202.103.5 (executor 6) (158/200)
+2022-11-22 12:48:25,962 INFO scheduler.TaskSetManager: Finished task 13.0 in stage 1.0 (TID 17) in 2322 ms on 198.202.103.5 (executor 8) (159/200)
+2022-11-22 12:48:25,962 INFO scheduler.TaskSetManager: Finished task 101.0 in stage 1.0 (TID 105) in 2305 ms on 198.202.103.5 (executor 6) (160/200)
+2022-11-22 12:48:25,962 INFO scheduler.TaskSetManager: Finished task 3.0 in stage 1.0 (TID 7) in 2324 ms on 198.202.103.5 (executor 8) (161/200)
+2022-11-22 12:48:25,962 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 1.0 (TID 5) in 2324 ms on 198.202.103.5 (executor 6) (162/200)
+2022-11-22 12:48:25,962 INFO scheduler.TaskSetManager: Finished task 33.0 in stage 1.0 (TID 37) in 2318 ms on 198.202.103.5 (executor 8) (163/200)
+2022-11-22 12:48:25,963 INFO scheduler.TaskSetManager: Finished task 93.0 in stage 1.0 (TID 97) in 2307 ms on 198.202.103.5 (executor 8) (164/200)
+2022-11-22 12:48:25,963 INFO scheduler.TaskSetManager: Finished task 41.0 in stage 1.0 (TID 45) in 2317 ms on 198.202.103.5 (executor 6) (165/200)
+2022-11-22 12:48:25,963 INFO scheduler.TaskSetManager: Finished task 81.0 in stage 1.0 (TID 85) in 2310 ms on 198.202.103.5 (executor 6) (166/200)
+2022-11-22 12:48:25,963 INFO scheduler.TaskSetManager: Finished task 83.0 in stage 1.0 (TID 87) in 2309 ms on 198.202.103.5 (executor 8) (167/200)
+2022-11-22 12:48:25,963 INFO scheduler.TaskSetManager: Finished task 111.0 in stage 1.0 (TID 115) in 2304 ms on 198.202.103.5 (executor 6) (168/200)
+2022-11-22 12:48:25,963 INFO scheduler.TaskSetManager: Finished task 113.0 in stage 1.0 (TID 117) in 2304 ms on 198.202.103.5 (executor 8) (169/200)
+2022-11-22 12:48:25,963 INFO scheduler.TaskSetManager: Finished task 51.0 in stage 1.0 (TID 55) in 2315 ms on 198.202.103.5 (executor 6) (170/200)
+2022-11-22 12:48:25,963 INFO scheduler.TaskSetManager: Finished task 43.0 in stage 1.0 (TID 47) in 2317 ms on 198.202.103.5 (executor 8) (171/200)
+2022-11-22 12:48:25,964 INFO scheduler.TaskSetManager: Finished task 31.0 in stage 1.0 (TID 35) in 2320 ms on 198.202.103.5 (executor 6) (172/200)
+2022-11-22 12:48:25,964 INFO scheduler.TaskSetManager: Finished task 23.0 in stage 1.0 (TID 27) in 2322 ms on 198.202.103.5 (executor 8) (173/200)
+2022-11-22 12:48:25,964 INFO scheduler.TaskSetManager: Finished task 21.0 in stage 1.0 (TID 25) in 2322 ms on 198.202.103.5 (executor 6) (174/200)
+2022-11-22 12:48:25,964 INFO scheduler.TaskSetManager: Finished task 73.0 in stage 1.0 (TID 77) in 2312 ms on 198.202.103.5 (executor 8) (175/200)
+2022-11-22 12:48:25,964 INFO scheduler.TaskSetManager: Finished task 11.0 in stage 1.0 (TID 15) in 2324 ms on 198.202.103.5 (executor 6) (176/200)
+2022-11-22 12:48:25,992 INFO scheduler.TaskSetManager: Finished task 9.0 in stage 1.0 (TID 13) in 2352 ms on 198.202.103.5 (executor 5) (177/200)
+2022-11-22 12:48:25,993 INFO scheduler.TaskSetManager: Finished task 109.0 in stage 1.0 (TID 113) in 2334 ms on 198.202.103.5 (executor 5) (178/200)
+2022-11-22 12:48:25,994 INFO scheduler.TaskSetManager: Finished task 29.0 in stage 1.0 (TID 33) in 2350 ms on 198.202.103.5 (executor 5) (179/200)
+2022-11-22 12:48:25,994 INFO scheduler.TaskSetManager: Finished task 69.0 in stage 1.0 (TID 73) in 2343 ms on 198.202.103.5 (executor 5) (180/200)
+2022-11-22 12:48:25,994 INFO scheduler.TaskSetManager: Finished task 59.0 in stage 1.0 (TID 63) in 2344 ms on 198.202.103.5 (executor 5) (181/200)
+2022-11-22 12:48:25,994 INFO scheduler.TaskSetManager: Finished task 49.0 in stage 1.0 (TID 53) in 2346 ms on 198.202.103.5 (executor 5) (182/200)
+2022-11-22 12:48:25,994 INFO scheduler.TaskSetManager: Finished task 99.0 in stage 1.0 (TID 103) in 2337 ms on 198.202.103.5 (executor 5) (183/200)
+2022-11-22 12:48:25,994 INFO scheduler.TaskSetManager: Finished task 89.0 in stage 1.0 (TID 93) in 2339 ms on 198.202.103.5 (executor 5) (184/200)
+2022-11-22 12:48:25,995 INFO scheduler.TaskSetManager: Finished task 119.0 in stage 1.0 (TID 123) in 2334 ms on 198.202.103.5 (executor 5) (185/200)
+2022-11-22 12:48:25,995 INFO scheduler.TaskSetManager: Finished task 79.0 in stage 1.0 (TID 83) in 2342 ms on 198.202.103.5 (executor 5) (186/200)
+2022-11-22 12:48:25,995 INFO scheduler.TaskSetManager: Finished task 39.0 in stage 1.0 (TID 43) in 2349 ms on 198.202.103.5 (executor 5) (187/200)
+2022-11-22 12:48:25,995 INFO scheduler.TaskSetManager: Finished task 19.0 in stage 1.0 (TID 23) in 2353 ms on 198.202.103.5 (executor 5) (188/200)
+2022-11-22 12:48:26,046 INFO scheduler.TaskSetManager: Finished task 15.0 in stage 1.0 (TID 19) in 2405 ms on 198.202.103.5 (executor 3) (189/200)
+2022-11-22 12:48:26,046 INFO scheduler.TaskSetManager: Finished task 25.0 in stage 1.0 (TID 29) in 2403 ms on 198.202.103.5 (executor 3) (190/200)
+2022-11-22 12:48:26,046 INFO scheduler.TaskSetManager: Finished task 35.0 in stage 1.0 (TID 39) in 2401 ms on 198.202.103.5 (executor 3) (191/200)
+2022-11-22 12:48:26,046 INFO scheduler.TaskSetManager: Finished task 75.0 in stage 1.0 (TID 79) in 2394 ms on 198.202.103.5 (executor 3) (192/200)
+2022-11-22 12:48:26,046 INFO scheduler.TaskSetManager: Finished task 105.0 in stage 1.0 (TID 109) in 2388 ms on 198.202.103.5 (executor 3) (193/200)
+2022-11-22 12:48:26,047 INFO scheduler.TaskSetManager: Finished task 95.0 in stage 1.0 (TID 99) in 2391 ms on 198.202.103.5 (executor 3) (194/200)
+2022-11-22 12:48:26,061 INFO scheduler.TaskSetManager: Finished task 55.0 in stage 1.0 (TID 59) in 2412 ms on 198.202.103.5 (executor 3) (195/200)
+2022-11-22 12:48:26,061 INFO scheduler.TaskSetManager: Finished task 85.0 in stage 1.0 (TID 89) in 2407 ms on 198.202.103.5 (executor 3) (196/200)
+2022-11-22 12:48:26,061 INFO scheduler.TaskSetManager: Finished task 115.0 in stage 1.0 (TID 119) in 2401 ms on 198.202.103.5 (executor 3) (197/200)
+2022-11-22 12:48:26,063 INFO scheduler.TaskSetManager: Finished task 5.0 in stage 1.0 (TID 9) in 2424 ms on 198.202.103.5 (executor 3) (198/200)
+2022-11-22 12:48:26,063 INFO scheduler.TaskSetManager: Finished task 65.0 in stage 1.0 (TID 69) in 2412 ms on 198.202.103.5 (executor 3) (199/200)
+2022-11-22 12:48:26,063 INFO scheduler.TaskSetManager: Finished task 45.0 in stage 1.0 (TID 49) in 2416 ms on 198.202.103.5 (executor 3) (200/200)
+2022-11-22 12:48:26,063 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2022-11-22 12:48:26,064 INFO scheduler.DAGScheduler: ShuffleMapStage 1 (show at Netflix.scala:30) finished in 2.439 s
+2022-11-22 12:48:26,064 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-11-22 12:48:26,064 INFO scheduler.DAGScheduler: running: Set()
+2022-11-22 12:48:26,064 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 2)
+2022-11-22 12:48:26,064 INFO scheduler.DAGScheduler: failed: Set()
+2022-11-22 12:48:26,064 INFO scheduler.DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[12] at show at Netflix.scala:30), which has no missing parents
+2022-11-22 12:48:26,070 INFO memory.MemoryStore: Block broadcast_3 stored as values in memory (estimated size 38.0 KiB, free 434.1 MiB)
+2022-11-22 12:48:26,072 INFO memory.MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 17.2 KiB, free 434.0 MiB)
+2022-11-22 12:48:26,080 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on exp-5-10.expanse.sdsc.edu:43847 (size: 17.2 KiB, free: 434.3 MiB)
+2022-11-22 12:48:26,080 INFO spark.SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1388
+2022-11-22 12:48:26,081 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[12] at show at Netflix.scala:30) (first 15 tasks are for partitions Vector(0))
+2022-11-22 12:48:26,081 INFO scheduler.TaskSchedulerImpl: Adding task set 2.0 with 1 tasks resource profile 0
+2022-11-22 12:48:26,084 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 2.0 (TID 204) (198.202.103.5, executor 7, partition 0, NODE_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,086 INFO storage.BlockManagerInfo: Removed broadcast_1_piece0 on exp-5-10.expanse.sdsc.edu:43847 in memory (size: 13.4 KiB, free: 434.3 MiB)
+2022-11-22 12:48:26,090 INFO storage.BlockManagerInfo: Removed broadcast_1_piece0 on 198.202.103.5:46035 in memory (size: 13.4 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,091 INFO storage.BlockManagerInfo: Removed broadcast_1_piece0 on 198.202.103.5:33855 in memory (size: 13.4 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,091 INFO storage.BlockManagerInfo: Removed broadcast_1_piece0 on 198.202.103.5:36453 in memory (size: 13.4 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,092 INFO storage.BlockManagerInfo: Removed broadcast_1_piece0 on 198.202.103.5:34947 in memory (size: 13.4 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,107 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on 198.202.103.5:33635 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,124 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 198.202.103.5:49590
+2022-11-22 12:48:26,200 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 2.0 (TID 204) in 118 ms on 198.202.103.5 (executor 7) (1/1)
+2022-11-22 12:48:26,200 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2022-11-22 12:48:26,201 INFO scheduler.DAGScheduler: ResultStage 2 (show at Netflix.scala:30) finished in 0.135 s
+2022-11-22 12:48:26,204 INFO scheduler.DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+2022-11-22 12:48:26,204 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 2: Stage finished
+2022-11-22 12:48:26,206 INFO scheduler.DAGScheduler: Job 0 finished: show at Netflix.scala:30, took 8.998472 s
+2022-11-22 12:48:26,217 INFO spark.SparkContext: Starting job: show at Netflix.scala:30
+2022-11-22 12:48:26,218 INFO scheduler.DAGScheduler: Got job 1 (show at Netflix.scala:30) with 4 output partitions
+2022-11-22 12:48:26,218 INFO scheduler.DAGScheduler: Final stage: ResultStage 5 (show at Netflix.scala:30)
+2022-11-22 12:48:26,218 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 4)
+2022-11-22 12:48:26,219 INFO scheduler.DAGScheduler: Missing parents: List()
+2022-11-22 12:48:26,219 INFO scheduler.DAGScheduler: Submitting ResultStage 5 (MapPartitionsRDD[12] at show at Netflix.scala:30), which has no missing parents
+2022-11-22 12:48:26,224 INFO memory.MemoryStore: Block broadcast_4 stored as values in memory (estimated size 38.0 KiB, free 434.0 MiB)
+2022-11-22 12:48:26,225 INFO memory.MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 17.2 KiB, free 434.0 MiB)
+2022-11-22 12:48:26,226 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on exp-5-10.expanse.sdsc.edu:43847 (size: 17.2 KiB, free: 434.3 MiB)
+2022-11-22 12:48:26,226 INFO spark.SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1388
+2022-11-22 12:48:26,226 INFO scheduler.DAGScheduler: Submitting 4 missing tasks from ResultStage 5 (MapPartitionsRDD[12] at show at Netflix.scala:30) (first 15 tasks are for partitions Vector(1, 2, 3, 4))
+2022-11-22 12:48:26,226 INFO scheduler.TaskSchedulerImpl: Adding task set 5.0 with 4 tasks resource profile 0
+2022-11-22 12:48:26,227 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 5.0 (TID 205) (198.202.103.5, executor 5, partition 1, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,227 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 5.0 (TID 206) (198.202.103.5, executor 7, partition 2, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,227 INFO scheduler.TaskSetManager: Starting task 2.0 in stage 5.0 (TID 207) (198.202.103.5, executor 3, partition 3, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,228 INFO scheduler.TaskSetManager: Starting task 3.0 in stage 5.0 (TID 208) (198.202.103.5, executor 1, partition 4, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,236 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on 198.202.103.5:33635 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,240 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on 198.202.103.5:46035 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,248 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 5.0 (TID 206) in 21 ms on 198.202.103.5 (executor 7) (1/4)
+2022-11-22 12:48:26,254 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 198.202.103.5:49580
+2022-11-22 12:48:26,259 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on 198.202.103.5:44571 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,260 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on 198.202.103.5:41423 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,274 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 198.202.103.5:49584
+2022-11-22 12:48:26,279 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 198.202.103.5:49586
+2022-11-22 12:48:26,310 INFO scheduler.TaskSetManager: Finished task 3.0 in stage 5.0 (TID 208) in 83 ms on 198.202.103.5 (executor 1) (2/4)
+2022-11-22 12:48:26,311 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 5.0 (TID 205) in 84 ms on 198.202.103.5 (executor 5) (3/4)
+2022-11-22 12:48:26,316 INFO scheduler.TaskSetManager: Finished task 2.0 in stage 5.0 (TID 207) in 89 ms on 198.202.103.5 (executor 3) (4/4)
+2022-11-22 12:48:26,316 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+2022-11-22 12:48:26,316 INFO scheduler.DAGScheduler: ResultStage 5 (show at Netflix.scala:30) finished in 0.096 s
+2022-11-22 12:48:26,317 INFO scheduler.DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+2022-11-22 12:48:26,317 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 5: Stage finished
+2022-11-22 12:48:26,317 INFO scheduler.DAGScheduler: Job 1 finished: show at Netflix.scala:30, took 0.099728 s
+2022-11-22 12:48:26,323 INFO spark.SparkContext: Starting job: show at Netflix.scala:30
+2022-11-22 12:48:26,324 INFO scheduler.DAGScheduler: Got job 2 (show at Netflix.scala:30) with 20 output partitions
+2022-11-22 12:48:26,324 INFO scheduler.DAGScheduler: Final stage: ResultStage 8 (show at Netflix.scala:30)
+2022-11-22 12:48:26,324 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 7)
+2022-11-22 12:48:26,324 INFO scheduler.DAGScheduler: Missing parents: List()
+2022-11-22 12:48:26,325 INFO scheduler.DAGScheduler: Submitting ResultStage 8 (MapPartitionsRDD[12] at show at Netflix.scala:30), which has no missing parents
+2022-11-22 12:48:26,330 INFO memory.MemoryStore: Block broadcast_5 stored as values in memory (estimated size 38.0 KiB, free 434.0 MiB)
+2022-11-22 12:48:26,331 INFO memory.MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 17.2 KiB, free 434.0 MiB)
+2022-11-22 12:48:26,332 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on exp-5-10.expanse.sdsc.edu:43847 (size: 17.2 KiB, free: 434.3 MiB)
+2022-11-22 12:48:26,332 INFO spark.SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1388
+2022-11-22 12:48:26,332 INFO scheduler.DAGScheduler: Submitting 20 missing tasks from ResultStage 8 (MapPartitionsRDD[12] at show at Netflix.scala:30) (first 15 tasks are for partitions Vector(5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19))
+2022-11-22 12:48:26,332 INFO scheduler.TaskSchedulerImpl: Adding task set 8.0 with 20 tasks resource profile 0
+2022-11-22 12:48:26,333 INFO scheduler.TaskSetManager: Starting task 4.0 in stage 8.0 (TID 209) (198.202.103.5, executor 8, partition 9, NODE_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,334 INFO scheduler.TaskSetManager: Starting task 7.0 in stage 8.0 (TID 210) (198.202.103.5, executor 5, partition 12, NODE_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,334 INFO scheduler.TaskSetManager: Starting task 13.0 in stage 8.0 (TID 211) (198.202.103.5, executor 1, partition 18, NODE_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,334 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 8.0 (TID 212) (198.202.103.5, executor 8, partition 5, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,335 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 8.0 (TID 213) (198.202.103.5, executor 5, partition 6, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,335 INFO scheduler.TaskSetManager: Starting task 2.0 in stage 8.0 (TID 214) (198.202.103.5, executor 1, partition 7, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,335 INFO scheduler.TaskSetManager: Starting task 3.0 in stage 8.0 (TID 215) (198.202.103.5, executor 7, partition 8, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,335 INFO scheduler.TaskSetManager: Starting task 5.0 in stage 8.0 (TID 216) (198.202.103.5, executor 9, partition 10, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,335 INFO scheduler.TaskSetManager: Starting task 6.0 in stage 8.0 (TID 217) (198.202.103.5, executor 3, partition 11, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,335 INFO scheduler.TaskSetManager: Starting task 8.0 in stage 8.0 (TID 218) (198.202.103.5, executor 0, partition 13, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,335 INFO scheduler.TaskSetManager: Starting task 9.0 in stage 8.0 (TID 219) (198.202.103.5, executor 6, partition 14, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,335 INFO scheduler.TaskSetManager: Starting task 10.0 in stage 8.0 (TID 220) (198.202.103.5, executor 2, partition 15, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,335 INFO scheduler.TaskSetManager: Starting task 11.0 in stage 8.0 (TID 221) (198.202.103.5, executor 4, partition 16, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,335 INFO scheduler.TaskSetManager: Starting task 12.0 in stage 8.0 (TID 222) (198.202.103.5, executor 8, partition 17, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,335 INFO scheduler.TaskSetManager: Starting task 14.0 in stage 8.0 (TID 223) (198.202.103.5, executor 5, partition 19, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,336 INFO scheduler.TaskSetManager: Starting task 15.0 in stage 8.0 (TID 224) (198.202.103.5, executor 1, partition 20, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,336 INFO scheduler.TaskSetManager: Starting task 16.0 in stage 8.0 (TID 225) (198.202.103.5, executor 7, partition 21, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,336 INFO scheduler.TaskSetManager: Starting task 17.0 in stage 8.0 (TID 226) (198.202.103.5, executor 9, partition 22, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,336 INFO scheduler.TaskSetManager: Starting task 18.0 in stage 8.0 (TID 227) (198.202.103.5, executor 3, partition 23, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,336 INFO scheduler.TaskSetManager: Starting task 19.0 in stage 8.0 (TID 228) (198.202.103.5, executor 0, partition 24, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,348 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on 198.202.103.5:46035 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,351 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on 198.202.103.5:33635 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,352 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on 198.202.103.5:33855 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,353 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on 198.202.103.5:34947 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,354 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on 198.202.103.5:36453 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,354 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on 198.202.103.5:41423 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,355 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on 198.202.103.5:44571 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,364 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 198.202.103.5:49594
+2022-11-22 12:48:26,365 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on 198.202.103.5:45789 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,365 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on 198.202.103.5:38429 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,365 INFO scheduler.TaskSetManager: Finished task 3.0 in stage 8.0 (TID 215) in 30 ms on 198.202.103.5 (executor 7) (1/20)
+2022-11-22 12:48:26,365 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on 198.202.103.5:34705 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,365 INFO scheduler.TaskSetManager: Finished task 16.0 in stage 8.0 (TID 225) in 29 ms on 198.202.103.5 (executor 7) (2/20)
+2022-11-22 12:48:26,367 INFO scheduler.TaskSetManager: Finished task 6.0 in stage 8.0 (TID 217) in 32 ms on 198.202.103.5 (executor 3) (3/20)
+2022-11-22 12:48:26,367 INFO scheduler.TaskSetManager: Finished task 15.0 in stage 8.0 (TID 224) in 31 ms on 198.202.103.5 (executor 1) (4/20)
+2022-11-22 12:48:26,369 INFO scheduler.TaskSetManager: Finished task 2.0 in stage 8.0 (TID 214) in 34 ms on 198.202.103.5 (executor 1) (5/20)
+2022-11-22 12:48:26,370 INFO scheduler.TaskSetManager: Finished task 18.0 in stage 8.0 (TID 227) in 34 ms on 198.202.103.5 (executor 3) (6/20)
+2022-11-22 12:48:26,372 INFO scheduler.TaskSetManager: Finished task 14.0 in stage 8.0 (TID 223) in 37 ms on 198.202.103.5 (executor 5) (7/20)
+2022-11-22 12:48:26,373 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 8.0 (TID 213) in 39 ms on 198.202.103.5 (executor 5) (8/20)
+2022-11-22 12:48:26,381 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 198.202.103.5:49582
+2022-11-22 12:48:26,385 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 198.202.103.5:49588
+2022-11-22 12:48:26,385 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 198.202.103.5:49596
+2022-11-22 12:48:26,385 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 198.202.103.5:49592
+2022-11-22 12:48:26,386 INFO scheduler.TaskSetManager: Finished task 13.0 in stage 8.0 (TID 211) in 52 ms on 198.202.103.5 (executor 1) (9/20)
+2022-11-22 12:48:26,392 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 198.202.103.5:49578
+2022-11-22 12:48:26,398 INFO scheduler.TaskSetManager: Finished task 10.0 in stage 8.0 (TID 220) in 63 ms on 198.202.103.5 (executor 2) (10/20)
+2022-11-22 12:48:26,410 INFO scheduler.TaskSetManager: Finished task 7.0 in stage 8.0 (TID 210) in 76 ms on 198.202.103.5 (executor 5) (11/20)
+2022-11-22 12:48:26,413 INFO scheduler.TaskSetManager: Finished task 17.0 in stage 8.0 (TID 226) in 77 ms on 198.202.103.5 (executor 9) (12/20)
+2022-11-22 12:48:26,413 INFO scheduler.TaskSetManager: Finished task 5.0 in stage 8.0 (TID 216) in 78 ms on 198.202.103.5 (executor 9) (13/20)
+2022-11-22 12:48:26,417 INFO scheduler.TaskSetManager: Finished task 8.0 in stage 8.0 (TID 218) in 82 ms on 198.202.103.5 (executor 0) (14/20)
+2022-11-22 12:48:26,417 INFO scheduler.TaskSetManager: Finished task 19.0 in stage 8.0 (TID 228) in 81 ms on 198.202.103.5 (executor 0) (15/20)
+2022-11-22 12:48:26,424 INFO scheduler.TaskSetManager: Finished task 11.0 in stage 8.0 (TID 221) in 89 ms on 198.202.103.5 (executor 4) (16/20)
+2022-11-22 12:48:26,428 INFO scheduler.TaskSetManager: Finished task 9.0 in stage 8.0 (TID 219) in 93 ms on 198.202.103.5 (executor 6) (17/20)
+2022-11-22 12:48:26,442 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 8.0 (TID 212) in 108 ms on 198.202.103.5 (executor 8) (18/20)
+2022-11-22 12:48:26,442 INFO scheduler.TaskSetManager: Finished task 12.0 in stage 8.0 (TID 222) in 107 ms on 198.202.103.5 (executor 8) (19/20)
+2022-11-22 12:48:26,454 INFO scheduler.TaskSetManager: Finished task 4.0 in stage 8.0 (TID 209) in 121 ms on 198.202.103.5 (executor 8) (20/20)
+2022-11-22 12:48:26,454 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 8.0, whose tasks have all completed, from pool 
+2022-11-22 12:48:26,454 INFO scheduler.DAGScheduler: ResultStage 8 (show at Netflix.scala:30) finished in 0.127 s
+2022-11-22 12:48:26,455 INFO scheduler.DAGScheduler: Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+2022-11-22 12:48:26,455 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 8: Stage finished
+2022-11-22 12:48:26,455 INFO scheduler.DAGScheduler: Job 2 finished: show at Netflix.scala:30, took 0.131926 s
+2022-11-22 12:48:26,462 INFO spark.SparkContext: Starting job: show at Netflix.scala:30
+2022-11-22 12:48:26,463 INFO scheduler.DAGScheduler: Got job 3 (show at Netflix.scala:30) with 94 output partitions
+2022-11-22 12:48:26,463 INFO scheduler.DAGScheduler: Final stage: ResultStage 11 (show at Netflix.scala:30)
+2022-11-22 12:48:26,463 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 10)
+2022-11-22 12:48:26,464 INFO scheduler.DAGScheduler: Missing parents: List()
+2022-11-22 12:48:26,464 INFO scheduler.DAGScheduler: Submitting ResultStage 11 (MapPartitionsRDD[12] at show at Netflix.scala:30), which has no missing parents
+2022-11-22 12:48:26,470 INFO memory.MemoryStore: Block broadcast_6 stored as values in memory (estimated size 38.0 KiB, free 433.9 MiB)
+2022-11-22 12:48:26,472 INFO memory.MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 17.2 KiB, free 433.9 MiB)
+2022-11-22 12:48:26,472 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on exp-5-10.expanse.sdsc.edu:43847 (size: 17.2 KiB, free: 434.3 MiB)
+2022-11-22 12:48:26,473 INFO spark.SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1388
+2022-11-22 12:48:26,473 INFO scheduler.DAGScheduler: Submitting 94 missing tasks from ResultStage 11 (MapPartitionsRDD[12] at show at Netflix.scala:30) (first 15 tasks are for partitions Vector(25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39))
+2022-11-22 12:48:26,473 INFO scheduler.TaskSchedulerImpl: Adding task set 11.0 with 94 tasks resource profile 0
+2022-11-22 12:48:26,475 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 11.0 (TID 229) (198.202.103.5, executor 2, partition 25, NODE_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,475 INFO scheduler.TaskSetManager: Starting task 3.0 in stage 11.0 (TID 230) (198.202.103.5, executor 7, partition 28, NODE_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,475 INFO scheduler.TaskSetManager: Starting task 6.0 in stage 11.0 (TID 231) (198.202.103.5, executor 9, partition 31, NODE_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,475 INFO scheduler.TaskSetManager: Starting task 11.0 in stage 11.0 (TID 232) (198.202.103.5, executor 1, partition 36, NODE_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,475 INFO scheduler.TaskSetManager: Starting task 25.0 in stage 11.0 (TID 233) (198.202.103.5, executor 8, partition 50, NODE_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,475 INFO scheduler.TaskSetManager: Starting task 33.0 in stage 11.0 (TID 234) (198.202.103.5, executor 0, partition 58, NODE_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,475 INFO scheduler.TaskSetManager: Starting task 38.0 in stage 11.0 (TID 235) (198.202.103.5, executor 5, partition 63, NODE_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,475 INFO scheduler.TaskSetManager: Starting task 39.0 in stage 11.0 (TID 236) (198.202.103.5, executor 4, partition 64, NODE_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,475 INFO scheduler.TaskSetManager: Starting task 52.0 in stage 11.0 (TID 237) (198.202.103.5, executor 6, partition 77, NODE_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,476 INFO scheduler.TaskSetManager: Starting task 63.0 in stage 11.0 (TID 238) (198.202.103.5, executor 3, partition 88, NODE_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,476 INFO scheduler.TaskSetManager: Starting task 69.0 in stage 11.0 (TID 239) (198.202.103.5, executor 2, partition 94, NODE_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,476 INFO scheduler.TaskSetManager: Starting task 84.0 in stage 11.0 (TID 240) (198.202.103.5, executor 7, partition 109, NODE_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,476 INFO scheduler.TaskSetManager: Starting task 87.0 in stage 11.0 (TID 241) (198.202.103.5, executor 9, partition 112, NODE_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,476 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 11.0 (TID 242) (198.202.103.5, executor 2, partition 26, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,476 INFO scheduler.TaskSetManager: Starting task 2.0 in stage 11.0 (TID 243) (198.202.103.5, executor 7, partition 27, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,476 INFO scheduler.TaskSetManager: Starting task 4.0 in stage 11.0 (TID 244) (198.202.103.5, executor 9, partition 29, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,476 INFO scheduler.TaskSetManager: Starting task 5.0 in stage 11.0 (TID 245) (198.202.103.5, executor 1, partition 30, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,476 INFO scheduler.TaskSetManager: Starting task 7.0 in stage 11.0 (TID 246) (198.202.103.5, executor 8, partition 32, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,476 INFO scheduler.TaskSetManager: Starting task 8.0 in stage 11.0 (TID 247) (198.202.103.5, executor 0, partition 33, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,476 INFO scheduler.TaskSetManager: Starting task 9.0 in stage 11.0 (TID 248) (198.202.103.5, executor 5, partition 34, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,476 INFO scheduler.TaskSetManager: Starting task 10.0 in stage 11.0 (TID 249) (198.202.103.5, executor 4, partition 35, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,477 INFO scheduler.TaskSetManager: Starting task 12.0 in stage 11.0 (TID 250) (198.202.103.5, executor 6, partition 37, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,477 INFO scheduler.TaskSetManager: Starting task 13.0 in stage 11.0 (TID 251) (198.202.103.5, executor 3, partition 38, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,477 INFO scheduler.TaskSetManager: Starting task 14.0 in stage 11.0 (TID 252) (198.202.103.5, executor 2, partition 39, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,477 INFO scheduler.TaskSetManager: Starting task 15.0 in stage 11.0 (TID 253) (198.202.103.5, executor 7, partition 40, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,477 INFO scheduler.TaskSetManager: Starting task 16.0 in stage 11.0 (TID 254) (198.202.103.5, executor 9, partition 41, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,477 INFO scheduler.TaskSetManager: Starting task 17.0 in stage 11.0 (TID 255) (198.202.103.5, executor 1, partition 42, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,477 INFO scheduler.TaskSetManager: Starting task 18.0 in stage 11.0 (TID 256) (198.202.103.5, executor 8, partition 43, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,477 INFO scheduler.TaskSetManager: Starting task 19.0 in stage 11.0 (TID 257) (198.202.103.5, executor 0, partition 44, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,477 INFO scheduler.TaskSetManager: Starting task 20.0 in stage 11.0 (TID 258) (198.202.103.5, executor 5, partition 45, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,477 INFO scheduler.TaskSetManager: Starting task 21.0 in stage 11.0 (TID 259) (198.202.103.5, executor 4, partition 46, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,477 INFO scheduler.TaskSetManager: Starting task 22.0 in stage 11.0 (TID 260) (198.202.103.5, executor 6, partition 47, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,477 INFO scheduler.TaskSetManager: Starting task 23.0 in stage 11.0 (TID 261) (198.202.103.5, executor 3, partition 48, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,477 INFO scheduler.TaskSetManager: Starting task 24.0 in stage 11.0 (TID 262) (198.202.103.5, executor 2, partition 49, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,477 INFO scheduler.TaskSetManager: Starting task 26.0 in stage 11.0 (TID 263) (198.202.103.5, executor 7, partition 51, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,478 INFO scheduler.TaskSetManager: Starting task 27.0 in stage 11.0 (TID 264) (198.202.103.5, executor 9, partition 52, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,478 INFO scheduler.TaskSetManager: Starting task 28.0 in stage 11.0 (TID 265) (198.202.103.5, executor 1, partition 53, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,478 INFO scheduler.TaskSetManager: Starting task 29.0 in stage 11.0 (TID 266) (198.202.103.5, executor 8, partition 54, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,478 INFO scheduler.TaskSetManager: Starting task 30.0 in stage 11.0 (TID 267) (198.202.103.5, executor 0, partition 55, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,478 INFO scheduler.TaskSetManager: Starting task 31.0 in stage 11.0 (TID 268) (198.202.103.5, executor 5, partition 56, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,478 INFO scheduler.TaskSetManager: Starting task 32.0 in stage 11.0 (TID 269) (198.202.103.5, executor 4, partition 57, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,478 INFO scheduler.TaskSetManager: Starting task 34.0 in stage 11.0 (TID 270) (198.202.103.5, executor 6, partition 59, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,478 INFO scheduler.TaskSetManager: Starting task 35.0 in stage 11.0 (TID 271) (198.202.103.5, executor 3, partition 60, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,478 INFO scheduler.TaskSetManager: Starting task 36.0 in stage 11.0 (TID 272) (198.202.103.5, executor 2, partition 61, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,478 INFO scheduler.TaskSetManager: Starting task 37.0 in stage 11.0 (TID 273) (198.202.103.5, executor 7, partition 62, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,478 INFO scheduler.TaskSetManager: Starting task 40.0 in stage 11.0 (TID 274) (198.202.103.5, executor 9, partition 65, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,478 INFO scheduler.TaskSetManager: Starting task 41.0 in stage 11.0 (TID 275) (198.202.103.5, executor 1, partition 66, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,478 INFO scheduler.TaskSetManager: Starting task 42.0 in stage 11.0 (TID 276) (198.202.103.5, executor 8, partition 67, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,478 INFO scheduler.TaskSetManager: Starting task 43.0 in stage 11.0 (TID 277) (198.202.103.5, executor 0, partition 68, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,478 INFO scheduler.TaskSetManager: Starting task 44.0 in stage 11.0 (TID 278) (198.202.103.5, executor 5, partition 69, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,478 INFO scheduler.TaskSetManager: Starting task 45.0 in stage 11.0 (TID 279) (198.202.103.5, executor 4, partition 70, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,478 INFO scheduler.TaskSetManager: Starting task 46.0 in stage 11.0 (TID 280) (198.202.103.5, executor 6, partition 71, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,479 INFO scheduler.TaskSetManager: Starting task 47.0 in stage 11.0 (TID 281) (198.202.103.5, executor 3, partition 72, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,479 INFO scheduler.TaskSetManager: Starting task 48.0 in stage 11.0 (TID 282) (198.202.103.5, executor 2, partition 73, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,479 INFO scheduler.TaskSetManager: Starting task 49.0 in stage 11.0 (TID 283) (198.202.103.5, executor 7, partition 74, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,479 INFO scheduler.TaskSetManager: Starting task 50.0 in stage 11.0 (TID 284) (198.202.103.5, executor 9, partition 75, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,479 INFO scheduler.TaskSetManager: Starting task 51.0 in stage 11.0 (TID 285) (198.202.103.5, executor 1, partition 76, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,479 INFO scheduler.TaskSetManager: Starting task 53.0 in stage 11.0 (TID 286) (198.202.103.5, executor 8, partition 78, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,479 INFO scheduler.TaskSetManager: Starting task 54.0 in stage 11.0 (TID 287) (198.202.103.5, executor 0, partition 79, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,479 INFO scheduler.TaskSetManager: Starting task 55.0 in stage 11.0 (TID 288) (198.202.103.5, executor 5, partition 80, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,479 INFO scheduler.TaskSetManager: Starting task 56.0 in stage 11.0 (TID 289) (198.202.103.5, executor 4, partition 81, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,479 INFO scheduler.TaskSetManager: Starting task 57.0 in stage 11.0 (TID 290) (198.202.103.5, executor 6, partition 82, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,479 INFO scheduler.TaskSetManager: Starting task 58.0 in stage 11.0 (TID 291) (198.202.103.5, executor 3, partition 83, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,479 INFO scheduler.TaskSetManager: Starting task 59.0 in stage 11.0 (TID 292) (198.202.103.5, executor 2, partition 84, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,479 INFO scheduler.TaskSetManager: Starting task 60.0 in stage 11.0 (TID 293) (198.202.103.5, executor 7, partition 85, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,479 INFO scheduler.TaskSetManager: Starting task 61.0 in stage 11.0 (TID 294) (198.202.103.5, executor 9, partition 86, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,479 INFO scheduler.TaskSetManager: Starting task 62.0 in stage 11.0 (TID 295) (198.202.103.5, executor 1, partition 87, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,479 INFO scheduler.TaskSetManager: Starting task 64.0 in stage 11.0 (TID 296) (198.202.103.5, executor 8, partition 89, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,479 INFO scheduler.TaskSetManager: Starting task 65.0 in stage 11.0 (TID 297) (198.202.103.5, executor 0, partition 90, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,479 INFO scheduler.TaskSetManager: Starting task 66.0 in stage 11.0 (TID 298) (198.202.103.5, executor 5, partition 91, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,480 INFO scheduler.TaskSetManager: Starting task 67.0 in stage 11.0 (TID 299) (198.202.103.5, executor 4, partition 92, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,480 INFO scheduler.TaskSetManager: Starting task 68.0 in stage 11.0 (TID 300) (198.202.103.5, executor 6, partition 93, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,480 INFO scheduler.TaskSetManager: Starting task 70.0 in stage 11.0 (TID 301) (198.202.103.5, executor 3, partition 95, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,480 INFO scheduler.TaskSetManager: Starting task 71.0 in stage 11.0 (TID 302) (198.202.103.5, executor 2, partition 96, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,480 INFO scheduler.TaskSetManager: Starting task 72.0 in stage 11.0 (TID 303) (198.202.103.5, executor 7, partition 97, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,480 INFO scheduler.TaskSetManager: Starting task 73.0 in stage 11.0 (TID 304) (198.202.103.5, executor 9, partition 98, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,480 INFO scheduler.TaskSetManager: Starting task 74.0 in stage 11.0 (TID 305) (198.202.103.5, executor 1, partition 99, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,480 INFO scheduler.TaskSetManager: Starting task 75.0 in stage 11.0 (TID 306) (198.202.103.5, executor 8, partition 100, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,480 INFO scheduler.TaskSetManager: Starting task 76.0 in stage 11.0 (TID 307) (198.202.103.5, executor 0, partition 101, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,480 INFO scheduler.TaskSetManager: Starting task 77.0 in stage 11.0 (TID 308) (198.202.103.5, executor 5, partition 102, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,480 INFO scheduler.TaskSetManager: Starting task 78.0 in stage 11.0 (TID 309) (198.202.103.5, executor 4, partition 103, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,480 INFO scheduler.TaskSetManager: Starting task 79.0 in stage 11.0 (TID 310) (198.202.103.5, executor 6, partition 104, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,480 INFO scheduler.TaskSetManager: Starting task 80.0 in stage 11.0 (TID 311) (198.202.103.5, executor 3, partition 105, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,480 INFO scheduler.TaskSetManager: Starting task 81.0 in stage 11.0 (TID 312) (198.202.103.5, executor 2, partition 106, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,480 INFO scheduler.TaskSetManager: Starting task 82.0 in stage 11.0 (TID 313) (198.202.103.5, executor 7, partition 107, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,480 INFO scheduler.TaskSetManager: Starting task 83.0 in stage 11.0 (TID 314) (198.202.103.5, executor 9, partition 108, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,480 INFO scheduler.TaskSetManager: Starting task 85.0 in stage 11.0 (TID 315) (198.202.103.5, executor 1, partition 110, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,480 INFO scheduler.TaskSetManager: Starting task 86.0 in stage 11.0 (TID 316) (198.202.103.5, executor 8, partition 111, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,481 INFO scheduler.TaskSetManager: Starting task 88.0 in stage 11.0 (TID 317) (198.202.103.5, executor 0, partition 113, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,481 INFO scheduler.TaskSetManager: Starting task 89.0 in stage 11.0 (TID 318) (198.202.103.5, executor 5, partition 114, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,481 INFO scheduler.TaskSetManager: Starting task 90.0 in stage 11.0 (TID 319) (198.202.103.5, executor 4, partition 115, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,481 INFO scheduler.TaskSetManager: Starting task 91.0 in stage 11.0 (TID 320) (198.202.103.5, executor 6, partition 116, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,481 INFO scheduler.TaskSetManager: Starting task 92.0 in stage 11.0 (TID 321) (198.202.103.5, executor 3, partition 117, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,481 INFO scheduler.TaskSetManager: Starting task 93.0 in stage 11.0 (TID 322) (198.202.103.5, executor 2, partition 118, PROCESS_LOCAL, 4457 bytes) taskResourceAssignments Map()
+2022-11-22 12:48:26,494 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on 198.202.103.5:34947 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,495 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on 198.202.103.5:46035 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,495 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on 198.202.103.5:33855 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,496 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on 198.202.103.5:41423 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,497 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on 198.202.103.5:36453 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,498 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on 198.202.103.5:44571 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,498 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on 198.202.103.5:33635 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,500 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on 198.202.103.5:34705 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,502 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on 198.202.103.5:45789 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,504 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on 198.202.103.5:38429 (size: 17.2 KiB, free: 14.2 GiB)
+2022-11-22 12:48:26,510 INFO scheduler.TaskSetManager: Finished task 73.0 in stage 11.0 (TID 304) in 30 ms on 198.202.103.5 (executor 9) (1/94)
+2022-11-22 12:48:26,511 INFO scheduler.TaskSetManager: Finished task 61.0 in stage 11.0 (TID 294) in 31 ms on 198.202.103.5 (executor 9) (2/94)
+2022-11-22 12:48:26,516 INFO scheduler.TaskSetManager: Finished task 41.0 in stage 11.0 (TID 275) in 38 ms on 198.202.103.5 (executor 1) (3/94)
+2022-11-22 12:48:26,520 INFO scheduler.TaskSetManager: Finished task 16.0 in stage 11.0 (TID 254) in 43 ms on 198.202.103.5 (executor 9) (4/94)
+2022-11-22 12:48:26,520 INFO scheduler.TaskSetManager: Finished task 72.0 in stage 11.0 (TID 303) in 40 ms on 198.202.103.5 (executor 7) (5/94)
+2022-11-22 12:48:26,520 INFO scheduler.TaskSetManager: Finished task 24.0 in stage 11.0 (TID 262) in 43 ms on 198.202.103.5 (executor 2) (6/94)
+2022-11-22 12:48:26,521 INFO scheduler.TaskSetManager: Finished task 2.0 in stage 11.0 (TID 243) in 45 ms on 198.202.103.5 (executor 7) (7/94)
+2022-11-22 12:48:26,526 INFO scheduler.TaskSetManager: Finished task 14.0 in stage 11.0 (TID 252) in 49 ms on 198.202.103.5 (executor 2) (8/94)
+2022-11-22 12:48:26,526 INFO scheduler.TaskSetManager: Finished task 54.0 in stage 11.0 (TID 287) in 47 ms on 198.202.103.5 (executor 0) (9/94)
+2022-11-22 12:48:26,526 INFO scheduler.TaskSetManager: Finished task 30.0 in stage 11.0 (TID 267) in 48 ms on 198.202.103.5 (executor 0) (10/94)
+2022-11-22 12:48:26,526 INFO scheduler.TaskSetManager: Finished task 81.0 in stage 11.0 (TID 312) in 46 ms on 198.202.103.5 (executor 2) (11/94)
+2022-11-22 12:48:26,526 INFO scheduler.TaskSetManager: Finished task 65.0 in stage 11.0 (TID 297) in 47 ms on 198.202.103.5 (executor 0) (12/94)
+2022-11-22 12:48:26,527 INFO scheduler.TaskSetManager: Finished task 88.0 in stage 11.0 (TID 317) in 47 ms on 198.202.103.5 (executor 0) (13/94)
+2022-11-22 12:48:26,527 INFO scheduler.TaskSetManager: Finished task 8.0 in stage 11.0 (TID 247) in 51 ms on 198.202.103.5 (executor 0) (14/94)
+2022-11-22 12:48:26,527 INFO scheduler.TaskSetManager: Finished task 89.0 in stage 11.0 (TID 318) in 46 ms on 198.202.103.5 (executor 5) (15/94)
+2022-11-22 12:48:26,527 INFO scheduler.TaskSetManager: Finished task 43.0 in stage 11.0 (TID 277) in 49 ms on 198.202.103.5 (executor 0) (16/94)
+2022-11-22 12:48:26,527 INFO scheduler.TaskSetManager: Finished task 19.0 in stage 11.0 (TID 257) in 50 ms on 198.202.103.5 (executor 0) (17/94)
+2022-11-22 12:48:26,527 INFO scheduler.TaskSetManager: Finished task 93.0 in stage 11.0 (TID 322) in 46 ms on 198.202.103.5 (executor 2) (18/94)
+2022-11-22 12:48:26,528 INFO scheduler.TaskSetManager: Finished task 66.0 in stage 11.0 (TID 298) in 49 ms on 198.202.103.5 (executor 5) (19/94)
+2022-11-22 12:48:26,528 INFO scheduler.TaskSetManager: Finished task 17.0 in stage 11.0 (TID 255) in 51 ms on 198.202.103.5 (executor 1) (20/94)
+2022-11-22 12:48:26,528 INFO scheduler.TaskSetManager: Finished task 5.0 in stage 11.0 (TID 245) in 52 ms on 198.202.103.5 (executor 1) (21/94)
+2022-11-22 12:48:26,528 INFO scheduler.TaskSetManager: Finished task 50.0 in stage 11.0 (TID 284) in 49 ms on 198.202.103.5 (executor 9) (22/94)
+2022-11-22 12:48:26,528 INFO scheduler.TaskSetManager: Finished task 74.0 in stage 11.0 (TID 305) in 48 ms on 198.202.103.5 (executor 1) (23/94)
+2022-11-22 12:48:26,528 INFO scheduler.TaskSetManager: Finished task 35.0 in stage 11.0 (TID 271) in 50 ms on 198.202.103.5 (executor 3) (24/94)
+2022-11-22 12:48:26,529 INFO scheduler.TaskSetManager: Finished task 40.0 in stage 11.0 (TID 274) in 51 ms on 198.202.103.5 (executor 9) (25/94)
+2022-11-22 12:48:26,529 INFO scheduler.TaskSetManager: Finished task 28.0 in stage 11.0 (TID 265) in 51 ms on 198.202.103.5 (executor 1) (26/94)
+2022-11-22 12:48:26,529 INFO scheduler.TaskSetManager: Finished task 27.0 in stage 11.0 (TID 264) in 52 ms on 198.202.103.5 (executor 9) (27/94)
+2022-11-22 12:48:26,529 INFO scheduler.TaskSetManager: Finished task 83.0 in stage 11.0 (TID 314) in 49 ms on 198.202.103.5 (executor 9) (28/94)
+2022-11-22 12:48:26,529 INFO scheduler.TaskSetManager: Finished task 85.0 in stage 11.0 (TID 315) in 49 ms on 198.202.103.5 (executor 1) (29/94)
+2022-11-22 12:48:26,530 INFO scheduler.TaskSetManager: Finished task 62.0 in stage 11.0 (TID 295) in 51 ms on 198.202.103.5 (executor 1) (30/94)
+2022-11-22 12:48:26,530 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 11.0 (TID 242) in 54 ms on 198.202.103.5 (executor 2) (31/94)
+2022-11-22 12:48:26,530 INFO scheduler.TaskSetManager: Finished task 47.0 in stage 11.0 (TID 281) in 51 ms on 198.202.103.5 (executor 3) (32/94)
+2022-11-22 12:48:26,530 INFO scheduler.TaskSetManager: Finished task 48.0 in stage 11.0 (TID 282) in 51 ms on 198.202.103.5 (executor 2) (33/94)
+2022-11-22 12:48:26,530 INFO scheduler.TaskSetManager: Finished task 26.0 in stage 11.0 (TID 263) in 53 ms on 198.202.103.5 (executor 7) (34/94)
+2022-11-22 12:48:26,530 INFO scheduler.TaskSetManager: Finished task 79.0 in stage 11.0 (TID 310) in 50 ms on 198.202.103.5 (executor 6) (35/94)
+2022-11-22 12:48:26,531 INFO scheduler.TaskSetManager: Finished task 51.0 in stage 11.0 (TID 285) in 52 ms on 198.202.103.5 (executor 1) (36/94)
+2022-11-22 12:48:26,533 INFO scheduler.TaskSetManager: Finished task 60.0 in stage 11.0 (TID 293) in 54 ms on 198.202.103.5 (executor 7) (37/94)
+2022-11-22 12:48:26,533 INFO scheduler.TaskSetManager: Finished task 91.0 in stage 11.0 (TID 320) in 52 ms on 198.202.103.5 (executor 6) (38/94)
+2022-11-22 12:48:26,533 INFO scheduler.TaskSetManager: Finished task 22.0 in stage 11.0 (TID 260) in 56 ms on 198.202.103.5 (executor 6) (39/94)
+2022-11-22 12:48:26,533 INFO scheduler.TaskSetManager: Finished task 37.0 in stage 11.0 (TID 273) in 55 ms on 198.202.103.5 (executor 7) (40/94)
+2022-11-22 12:48:26,534 INFO scheduler.TaskSetManager: Finished task 76.0 in stage 11.0 (TID 307) in 54 ms on 198.202.103.5 (executor 0) (41/94)
+2022-11-22 12:48:26,534 INFO scheduler.TaskSetManager: Finished task 9.0 in stage 11.0 (TID 248) in 58 ms on 198.202.103.5 (executor 5) (42/94)
+2022-11-22 12:48:26,534 INFO scheduler.TaskSetManager: Finished task 49.0 in stage 11.0 (TID 283) in 55 ms on 198.202.103.5 (executor 7) (43/94)
+2022-11-22 12:48:26,534 INFO scheduler.TaskSetManager: Finished task 23.0 in stage 11.0 (TID 261) in 57 ms on 198.202.103.5 (executor 3) (44/94)
+2022-11-22 12:48:26,534 INFO scheduler.TaskSetManager: Finished task 71.0 in stage 11.0 (TID 302) in 54 ms on 198.202.103.5 (executor 2) (45/94)
+2022-11-22 12:48:26,534 INFO scheduler.TaskSetManager: Finished task 59.0 in stage 11.0 (TID 292) in 55 ms on 198.202.103.5 (executor 2) (46/94)
+2022-11-22 12:48:26,536 INFO scheduler.TaskSetManager: Finished task 82.0 in stage 11.0 (TID 313) in 56 ms on 198.202.103.5 (executor 7) (47/94)
+2022-11-22 12:48:26,537 INFO scheduler.TaskSetManager: Finished task 15.0 in stage 11.0 (TID 253) in 60 ms on 198.202.103.5 (executor 7) (48/94)
+2022-11-22 12:48:26,537 INFO scheduler.TaskSetManager: Finished task 70.0 in stage 11.0 (TID 301) in 57 ms on 198.202.103.5 (executor 3) (49/94)
+2022-11-22 12:48:26,537 INFO scheduler.TaskSetManager: Finished task 20.0 in stage 11.0 (TID 258) in 60 ms on 198.202.103.5 (executor 5) (50/94)
+2022-11-22 12:48:26,537 INFO scheduler.TaskSetManager: Finished task 58.0 in stage 11.0 (TID 291) in 58 ms on 198.202.103.5 (executor 3) (51/94)
+2022-11-22 12:48:26,537 INFO scheduler.TaskSetManager: Finished task 13.0 in stage 11.0 (TID 251) in 60 ms on 198.202.103.5 (executor 3) (52/94)
+2022-11-22 12:48:26,537 INFO scheduler.TaskSetManager: Finished task 31.0 in stage 11.0 (TID 268) in 59 ms on 198.202.103.5 (executor 5) (53/94)
+2022-11-22 12:48:26,537 INFO scheduler.TaskSetManager: Finished task 77.0 in stage 11.0 (TID 308) in 57 ms on 198.202.103.5 (executor 5) (54/94)
+2022-11-22 12:48:26,538 INFO scheduler.TaskSetManager: Finished task 55.0 in stage 11.0 (TID 288) in 59 ms on 198.202.103.5 (executor 5) (55/94)
+2022-11-22 12:48:26,538 INFO scheduler.TaskSetManager: Finished task 44.0 in stage 11.0 (TID 278) in 60 ms on 198.202.103.5 (executor 5) (56/94)
+2022-11-22 12:48:26,538 INFO scheduler.TaskSetManager: Finished task 57.0 in stage 11.0 (TID 290) in 59 ms on 198.202.103.5 (executor 6) (57/94)
+2022-11-22 12:48:26,538 INFO scheduler.TaskSetManager: Finished task 46.0 in stage 11.0 (TID 280) in 60 ms on 198.202.103.5 (executor 6) (58/94)
+2022-11-22 12:48:26,538 INFO scheduler.TaskSetManager: Finished task 12.0 in stage 11.0 (TID 250) in 61 ms on 198.202.103.5 (executor 6) (59/94)
+2022-11-22 12:48:26,539 INFO scheduler.TaskSetManager: Finished task 67.0 in stage 11.0 (TID 299) in 59 ms on 198.202.103.5 (executor 4) (60/94)
+2022-11-22 12:48:26,539 INFO scheduler.TaskSetManager: Finished task 36.0 in stage 11.0 (TID 272) in 61 ms on 198.202.103.5 (executor 2) (61/94)
+2022-11-22 12:48:26,540 INFO scheduler.TaskSetManager: Finished task 34.0 in stage 11.0 (TID 270) in 62 ms on 198.202.103.5 (executor 6) (62/94)
+2022-11-22 12:48:26,540 INFO scheduler.TaskSetManager: Finished task 68.0 in stage 11.0 (TID 300) in 60 ms on 198.202.103.5 (executor 6) (63/94)
+2022-11-22 12:48:26,541 INFO scheduler.TaskSetManager: Finished task 80.0 in stage 11.0 (TID 311) in 61 ms on 198.202.103.5 (executor 3) (64/94)
+2022-11-22 12:48:26,541 INFO scheduler.TaskSetManager: Finished task 10.0 in stage 11.0 (TID 249) in 65 ms on 198.202.103.5 (executor 4) (65/94)
+2022-11-22 12:48:26,541 INFO scheduler.TaskSetManager: Finished task 56.0 in stage 11.0 (TID 289) in 62 ms on 198.202.103.5 (executor 4) (66/94)
+2022-11-22 12:48:26,542 INFO scheduler.TaskSetManager: Finished task 90.0 in stage 11.0 (TID 319) in 61 ms on 198.202.103.5 (executor 4) (67/94)
+2022-11-22 12:48:26,542 INFO scheduler.TaskSetManager: Finished task 32.0 in stage 11.0 (TID 269) in 64 ms on 198.202.103.5 (executor 4) (68/94)
+2022-11-22 12:48:26,544 INFO scheduler.TaskSetManager: Finished task 21.0 in stage 11.0 (TID 259) in 67 ms on 198.202.103.5 (executor 4) (69/94)
+2022-11-22 12:48:26,544 INFO scheduler.TaskSetManager: Finished task 92.0 in stage 11.0 (TID 321) in 63 ms on 198.202.103.5 (executor 3) (70/94)
+2022-11-22 12:48:26,544 INFO scheduler.TaskSetManager: Finished task 4.0 in stage 11.0 (TID 244) in 68 ms on 198.202.103.5 (executor 9) (71/94)
+2022-11-22 12:48:26,545 INFO scheduler.TaskSetManager: Finished task 78.0 in stage 11.0 (TID 309) in 65 ms on 198.202.103.5 (executor 4) (72/94)
+2022-11-22 12:48:26,546 INFO scheduler.TaskSetManager: Finished task 11.0 in stage 11.0 (TID 232) in 71 ms on 198.202.103.5 (executor 1) (73/94)
+2022-11-22 12:48:26,548 INFO scheduler.TaskSetManager: Finished task 45.0 in stage 11.0 (TID 279) in 70 ms on 198.202.103.5 (executor 4) (74/94)
+2022-11-22 12:48:26,551 INFO scheduler.TaskSetManager: Finished task 18.0 in stage 11.0 (TID 256) in 74 ms on 198.202.103.5 (executor 8) (75/94)
+2022-11-22 12:48:26,551 INFO scheduler.TaskSetManager: Finished task 64.0 in stage 11.0 (TID 296) in 72 ms on 198.202.103.5 (executor 8) (76/94)
+2022-11-22 12:48:26,551 INFO scheduler.TaskSetManager: Finished task 42.0 in stage 11.0 (TID 276) in 73 ms on 198.202.103.5 (executor 8) (77/94)
+2022-11-22 12:48:26,555 INFO scheduler.TaskSetManager: Finished task 86.0 in stage 11.0 (TID 316) in 75 ms on 198.202.103.5 (executor 8) (78/94)
+2022-11-22 12:48:26,563 INFO scheduler.TaskSetManager: Finished task 75.0 in stage 11.0 (TID 306) in 83 ms on 198.202.103.5 (executor 8) (79/94)
+2022-11-22 12:48:26,563 INFO scheduler.TaskSetManager: Finished task 29.0 in stage 11.0 (TID 266) in 85 ms on 198.202.103.5 (executor 8) (80/94)
+2022-11-22 12:48:26,564 INFO scheduler.TaskSetManager: Finished task 38.0 in stage 11.0 (TID 235) in 89 ms on 198.202.103.5 (executor 5) (81/94)
+2022-11-22 12:48:26,566 INFO scheduler.TaskSetManager: Finished task 53.0 in stage 11.0 (TID 286) in 87 ms on 198.202.103.5 (executor 8) (82/94)
+2022-11-22 12:48:26,566 INFO scheduler.TaskSetManager: Finished task 6.0 in stage 11.0 (TID 231) in 91 ms on 198.202.103.5 (executor 9) (83/94)
+2022-11-22 12:48:26,567 INFO scheduler.TaskSetManager: Finished task 87.0 in stage 11.0 (TID 241) in 91 ms on 198.202.103.5 (executor 9) (84/94)
+2022-11-22 12:48:26,567 INFO scheduler.TaskSetManager: Finished task 7.0 in stage 11.0 (TID 246) in 91 ms on 198.202.103.5 (executor 8) (85/94)
+2022-11-22 12:48:26,568 INFO scheduler.TaskSetManager: Finished task 3.0 in stage 11.0 (TID 230) in 93 ms on 198.202.103.5 (executor 7) (86/94)
+2022-11-22 12:48:26,568 INFO scheduler.TaskSetManager: Finished task 84.0 in stage 11.0 (TID 240) in 92 ms on 198.202.103.5 (executor 7) (87/94)
+2022-11-22 12:48:26,569 INFO scheduler.TaskSetManager: Finished task 33.0 in stage 11.0 (TID 234) in 94 ms on 198.202.103.5 (executor 0) (88/94)
+2022-11-22 12:48:26,570 INFO scheduler.TaskSetManager: Finished task 69.0 in stage 11.0 (TID 239) in 94 ms on 198.202.103.5 (executor 2) (89/94)
+2022-11-22 12:48:26,574 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 11.0 (TID 229) in 99 ms on 198.202.103.5 (executor 2) (90/94)
+2022-11-22 12:48:26,583 INFO scheduler.TaskSetManager: Finished task 25.0 in stage 11.0 (TID 233) in 108 ms on 198.202.103.5 (executor 8) (91/94)
+2022-11-22 12:48:26,587 INFO scheduler.TaskSetManager: Finished task 52.0 in stage 11.0 (TID 237) in 112 ms on 198.202.103.5 (executor 6) (92/94)
+2022-11-22 12:48:26,590 INFO scheduler.TaskSetManager: Finished task 63.0 in stage 11.0 (TID 238) in 115 ms on 198.202.103.5 (executor 3) (93/94)
+2022-11-22 12:48:26,591 INFO scheduler.TaskSetManager: Finished task 39.0 in stage 11.0 (TID 236) in 116 ms on 198.202.103.5 (executor 4) (94/94)
+2022-11-22 12:48:26,591 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 11.0, whose tasks have all completed, from pool 
+2022-11-22 12:48:26,591 INFO scheduler.DAGScheduler: ResultStage 11 (show at Netflix.scala:30) finished in 0.122 s
+2022-11-22 12:48:26,591 INFO scheduler.DAGScheduler: Job 3 is finished. Cancelling potential speculative or zombie tasks for this job
+2022-11-22 12:48:26,591 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 11: Stage finished
+2022-11-22 12:48:26,592 INFO scheduler.DAGScheduler: Job 3 finished: show at Netflix.scala:30, took 0.129378 s
+2022-11-22 12:48:26,611 INFO codegen.CodeGenerator: Code generated in 8.482576 ms
++-------+-----+
+|Average| Freq|
++-------+-----+
+|    2.9| 6370|
+|    2.6| 4528|
+|    1.9|  107|
+|    2.2| 1044|
+|    3.4|29514|
+|    5.0|10862|
+|    4.3|13531|
+|    3.2|24220|
+|    3.1|16957|
+|    3.9|21783|
+|    2.5| 4142|
+|    2.7| 4875|
+|    1.7|  176|
+|    4.1|20026|
+|    3.3|28242|
+|    2.8| 7204|
+|    1.0| 1333|
+|    4.8| 2426|
+|    4.4| 8509|
+|    3.7|35154|
++-------+-----+
+only showing top 20 rows
+
+2022-11-22 12:48:26,627 INFO server.AbstractConnector: Stopped Spark@308f9f31{HTTP/1.1, (http/1.1)}{exp-5-10:4040}
+2022-11-22 12:48:26,628 INFO ui.SparkUI: Stopped Spark web UI at http://exp-5-10.expanse.sdsc.edu:4040
+2022-11-22 12:48:26,632 INFO cluster.StandaloneSchedulerBackend: Shutting down all executors
+2022-11-22 12:48:26,632 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Asking each executor to shut down
+2022-11-22 12:48:26,651 INFO spark.MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+2022-11-22 12:48:26,689 INFO memory.MemoryStore: MemoryStore cleared
+2022-11-22 12:48:26,689 INFO storage.BlockManager: BlockManager stopped
+2022-11-22 12:48:26,691 INFO storage.BlockManagerMaster: BlockManagerMaster stopped
+2022-11-22 12:48:26,694 INFO scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+2022-11-22 12:48:26,711 INFO spark.SparkContext: Successfully stopped SparkContext
+2022-11-22 12:48:26,714 INFO util.ShutdownHookManager: Shutdown hook called
+2022-11-22 12:48:26,714 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-5b2cfee8-7148-403b-8267-963bca90aa6e
+2022-11-22 12:48:26,723 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-2f538387-19d1-419d-a5e9-97ab6e4ddb3d
+Stopping namenodes on [exp-5-10]
+Stopping datanodes
+WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+localhost: Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+localhost: It is also possible that a host key has just been changed.
+localhost: The fingerprint for the ED25519 key sent by the remote host is
+localhost: SHA256:Rc8q+zOLGZ652cpaq1MRqa2wsD73UYNXyiYnFKGyl/M.
+localhost: Please contact your system administrator.
+localhost: Add correct host key in /home/vthamalla/.ssh/known_hosts to get rid of this message.
+localhost: Offending ED25519 key in /home/vthamalla/.ssh/known_hosts:1
+localhost: Password authentication is disabled to avoid man-in-the-middle attacks.
+localhost: Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+localhost: WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+Stopping secondary namenodes [exp-5-10]
+Copying Hadoop logs back to /home/vthamalla/expansecluster/logs...
+'/scratch/vthamalla/job_17732616/logs' -> '/home/vthamalla/expansecluster/logs'
+'/scratch/vthamalla/job_17732616/logs/hadoop-vthamalla-namenode-exp-5-10.out' -> '/home/vthamalla/expansecluster/logs/hadoop-vthamalla-namenode-exp-5-10.out'
+'/scratch/vthamalla/job_17732616/logs/SecurityAuth-vthamalla.audit' -> '/home/vthamalla/expansecluster/logs/SecurityAuth-vthamalla.audit'
+'/scratch/vthamalla/job_17732616/logs/hadoop-vthamalla-datanode-exp-5-10.out' -> '/home/vthamalla/expansecluster/logs/hadoop-vthamalla-datanode-exp-5-10.out'
+'/scratch/vthamalla/job_17732616/logs/hadoop-vthamalla-namenode-exp-5-10.log' -> '/home/vthamalla/expansecluster/logs/hadoop-vthamalla-namenode-exp-5-10.log'
+'/scratch/vthamalla/job_17732616/logs/hadoop-vthamalla-datanode-exp-5-10.log' -> '/home/vthamalla/expansecluster/logs/hadoop-vthamalla-datanode-exp-5-10.log'
+'/scratch/vthamalla/job_17732616/logs/hadoop-vthamalla-secondarynamenode-exp-5-10.out' -> '/home/vthamalla/expansecluster/logs/hadoop-vthamalla-secondarynamenode-exp-5-10.out'
+'/scratch/vthamalla/job_17732616/logs/hadoop-vthamalla-secondarynamenode-exp-5-10.log' -> '/home/vthamalla/expansecluster/logs/hadoop-vthamalla-secondarynamenode-exp-5-10.log'
+'/scratch/vthamalla/job_17732616/logs/spark-vthamalla-org.apache.spark.deploy.master.Master-1-exp-5-10.out' -> '/home/vthamalla/expansecluster/logs/spark-vthamalla-org.apache.spark.deploy.master.Master-1-exp-5-10.out'
+removed directory '/scratch/vthamalla/job_17732616/tmp/dfs/namesecondary'
+removed directory '/scratch/vthamalla/job_17732616/tmp/dfs'
+removed directory '/scratch/vthamalla/job_17732616/tmp'
+removed directory '/scratch/vthamalla/job_17732616/hdfs_data/current/BP-906323820-198.202.103.5-1669150068300/current/rbw'
+removed '/scratch/vthamalla/job_17732616/hdfs_data/current/BP-906323820-198.202.103.5-1669150068300/current/dfsUsed'
+removed '/scratch/vthamalla/job_17732616/hdfs_data/current/BP-906323820-198.202.103.5-1669150068300/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta'
+removed '/scratch/vthamalla/job_17732616/hdfs_data/current/BP-906323820-198.202.103.5-1669150068300/current/finalized/subdir0/subdir0/blk_1073741827'
+removed '/scratch/vthamalla/job_17732616/hdfs_data/current/BP-906323820-198.202.103.5-1669150068300/current/finalized/subdir0/subdir0/blk_1073741827_1003.meta'
+removed '/scratch/vthamalla/job_17732616/hdfs_data/current/BP-906323820-198.202.103.5-1669150068300/current/finalized/subdir0/subdir0/blk_1073741828'
+removed '/scratch/vthamalla/job_17732616/hdfs_data/current/BP-906323820-198.202.103.5-1669150068300/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'
+removed '/scratch/vthamalla/job_17732616/hdfs_data/current/BP-906323820-198.202.103.5-1669150068300/current/finalized/subdir0/subdir0/blk_1073741825'
+removed '/scratch/vthamalla/job_17732616/hdfs_data/current/BP-906323820-198.202.103.5-1669150068300/current/finalized/subdir0/subdir0/blk_1073741828_1004.meta'
+removed '/scratch/vthamalla/job_17732616/hdfs_data/current/BP-906323820-198.202.103.5-1669150068300/current/finalized/subdir0/subdir0/blk_1073741826'
+removed directory '/scratch/vthamalla/job_17732616/hdfs_data/current/BP-906323820-198.202.103.5-1669150068300/current/finalized/subdir0/subdir0'
+removed directory '/scratch/vthamalla/job_17732616/hdfs_data/current/BP-906323820-198.202.103.5-1669150068300/current/finalized/subdir0'
+removed directory '/scratch/vthamalla/job_17732616/hdfs_data/current/BP-906323820-198.202.103.5-1669150068300/current/finalized'
+removed '/scratch/vthamalla/job_17732616/hdfs_data/current/BP-906323820-198.202.103.5-1669150068300/current/VERSION'
+removed directory '/scratch/vthamalla/job_17732616/hdfs_data/current/BP-906323820-198.202.103.5-1669150068300/current'
+removed directory '/scratch/vthamalla/job_17732616/hdfs_data/current/BP-906323820-198.202.103.5-1669150068300/tmp'
+removed '/scratch/vthamalla/job_17732616/hdfs_data/current/BP-906323820-198.202.103.5-1669150068300/scanner.cursor'
+removed directory '/scratch/vthamalla/job_17732616/hdfs_data/current/BP-906323820-198.202.103.5-1669150068300'
+removed '/scratch/vthamalla/job_17732616/hdfs_data/current/VERSION'
+removed directory '/scratch/vthamalla/job_17732616/hdfs_data/current'
+removed directory '/scratch/vthamalla/job_17732616/hdfs_data'
+removed '/scratch/vthamalla/job_17732616/logs/hadoop-vthamalla-namenode-exp-5-10.log'
+removed '/scratch/vthamalla/job_17732616/logs/hadoop-vthamalla-secondarynamenode-exp-5-10.log'
+removed '/scratch/vthamalla/job_17732616/logs/hadoop-vthamalla-secondarynamenode-exp-5-10.out'
+removed '/scratch/vthamalla/job_17732616/logs/hadoop-vthamalla-datanode-exp-5-10.out'
+removed '/scratch/vthamalla/job_17732616/logs/spark-vthamalla-org.apache.spark.deploy.master.Master-1-exp-5-10.out'
+removed '/scratch/vthamalla/job_17732616/logs/hadoop-vthamalla-datanode-exp-5-10.log'
+removed '/scratch/vthamalla/job_17732616/logs/hadoop-vthamalla-namenode-exp-5-10.out'
+removed '/scratch/vthamalla/job_17732616/logs/SecurityAuth-vthamalla.audit'
+removed directory '/scratch/vthamalla/job_17732616/logs'
+removed '/scratch/vthamalla/job_17732616/namenode_data/current/fsimage_0000000000000000000'
+removed '/scratch/vthamalla/job_17732616/namenode_data/current/seen_txid'
+removed '/scratch/vthamalla/job_17732616/namenode_data/current/fsimage_0000000000000000000.md5'
+removed '/scratch/vthamalla/job_17732616/namenode_data/current/edits_inprogress_0000000000000000001'
+removed '/scratch/vthamalla/job_17732616/namenode_data/current/VERSION'
+removed directory '/scratch/vthamalla/job_17732616/namenode_data/current'
+removed directory '/scratch/vthamalla/job_17732616/namenode_data'
+removed directory '/scratch/vthamalla/job_17732616/pids'
