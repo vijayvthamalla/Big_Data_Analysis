@@ -1,0 +1,18 @@
+#!/bin/bash
+#SBATCH -A uot182
+#SBATCH --job-name="netflix.local"
+#SBATCH --output="netflix.local.out"
+#SBATCH --partition=shared
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=4
+#SBATCH --mem=16G
+#SBATCH --export=ALL 
+#SBATCH --time=10
+
+module load openjdk
+SW=/expanse/lustre/projects/uot182/fegaras
+export HADOOP_HOME=$SW/hadoop-3.2.2
+PATH="$HADOOP_HOME/bin:$PATH"
+
+rm -rf temp output
+hadoop --config $SW/conf jar netflix.jar Netflix small-netflix.csv temp output
